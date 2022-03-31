@@ -1,0 +1,146 @@
+/* IMPOSTAZIONI GENERALI */
+html,body{
+  font-family: "Raleway", sans-serif ;
+  max-width: 420px;
+  margin: 30px;
+}
+p{
+    line-height: 1.8;
+}
+dl,ul{
+    line-height: 1.8;
+}
+hr{
+    margin-top:30px ;
+    margin-bottom:30px ;
+}
+/* HEADER */
+header h1{
+  font-size: xx-large;
+  text-align: center;
+  margin-bottom: 15px;
+}
+header h1 {
+   line-height: 1.5;
+}
+header h2{
+    font-size: large;
+    text-align: center;
+    font-style: oblique;
+}
+header{
+    background-color: darkcyan;
+    border-bottom: 5px solid darkblue;
+    padding: 30px;
+}
+h1 {
+    color: white;
+}
+span {
+    background-color: white;
+    color: darkcyan;
+}
+header h2 {
+    color: black;
+}
+#nascosto{
+    border-style: none;
+}
+
+/* MAIN */
+
+main hr {
+    border-style: dashed;
+}
+main h2 {
+    text-align: center;
+    color: darkcyan;
+    font-size: xx-large;
+    margin-bottom: 30px;
+}
+figure{
+    text-align: center;
+}
+img.immagine {
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: gray;
+}
+address b {
+    font-weight: bold;
+}
+address{
+    text-align: left;
+}
+address a{
+    color: salmon;
+}
+div p b{
+    font-weight: bold;
+    
+}
+blockquote{
+    text-align: center;
+    text-transform: capitalize;
+    font-style: italic;
+    border: 2px solid white;
+    background-color: rgba(219, 215, 215, 0.884);
+    border-radius: 12px;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+/* ELEMENTI NEL MAIN */
+h3{
+    font-size: large;
+    font-style: oblique;
+}
+
+div p strong{
+    color: darkcyan;
+}
+p mark{
+    background-color: darkcyan;
+    color: white;
+}
+dl strong{
+    color: darkcyan;
+}
+main p a{
+    color: salmon;
+}
+dd{
+    margin-left: 20px;
+}
+ul{
+    margin-left: 50px;
+    margin-top:20px ;
+    margin-bottom:20px ;
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.76);
+    border-top: 5px solid darkcyan;
+}
+footer p{
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+footer a{
+    color:salmon;
+}
+#nascosto {
+ border-style: hidden;
+}
+footer kbd{
+    font-style: italic;
+    color: yellow;
+}
+footer small{
+    color: gray;
+}
+footer hr{
+    border-style: none;
+}

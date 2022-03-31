@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            overflow: hidden; /*scroll, auto-- overflow-x,overflow-y*/
+            background-color: red;
+            padding: 50px;/*distanziare il contenuto dal resto*/
+            border-radius: 5px;
+            /*serve per arrotondare il bordo se metti 100% diventa tondo^*/
+            border-bottom-left-radius: 0 ;
+            /*per modificarele curvature di solo un lato a tua scelta*/
+            border: 10px outset gray;/*sta all esterno dell padding, lo delimita (dotted,smashed,double,inset,ouset,solid*/
+            overflow: hidden;
+            margin:20px 30px 40px 50px ;/*serve a determinare la distanza tra la pagina e lesterno*/
+            box-shadow: 10px 1px 3px black;/*queste tre misure sopra rappresentano x y e z(sfocatura dell ombra)mettendoli in negativo si muovono lo stesso sulle assi*/
+        }
+        /*mai usare il padding al posto del margin*/
+        div:hover{
+            border: 10px inset gray;
+        }
+        span{
+            height: 100px;
+            width: 100px;
+/*gli elementi in line ingorano completamente i comandi che modificano le dimensioni*/
+        }
+
+    </style>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae tempore voluptate labore exercitationem ea quibusdam enim alias adipisci? Consequatur aliquid delectus expedita distinctio perspiciatis ex veniam aliquam, ut corporis omnis.
+    </div>
+    <span>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur at rem architecto autem. Nesciunt veritatis dolores sint debitis, voluptatum a distinctio laborum tempora illum minus, possimus doloribus, soluta quo nihil!
+    </span>
+</body>
+</html>
