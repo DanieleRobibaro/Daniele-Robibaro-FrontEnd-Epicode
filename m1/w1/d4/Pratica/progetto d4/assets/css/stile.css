@@ -1,0 +1,188 @@
+/* IMPOSTAZIONI GENERALI */
+html{
+    background-image: url(../img/sfondo.png);
+}
+html,body{
+    max-width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: px;
+}
+/* HEADER */
+header{
+    padding: px;
+    text-align: center;
+    background-image: linear-gradient(rgb(18,152,182),rgb(6,117,147));
+    box-shadow: 0px 5px 10px;
+}
+div img{
+    margin-bottom: px;
+}
+div p{
+    margin-bottom: px;
+}
+nav li{
+    margin-bottom: px;
+}
+header div,nav{
+    color: white;
+}
+nav a{
+    color: white;
+}
+nav ul{
+    list-style-type: none; 
+}
+  header a:link{
+    text-decoration: none;
+}
+/* MAIN */
+main{
+    padding: px;
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: 0px 5px 10px;
+}
+
+
+
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+article{
+    line-height: ; 
+}
+article h1{
+    font-size: px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: px;
+}
+#opac{
+    color: grey;
+}
+article p{
+    margin-bottom: px;
+    text-align: left;
+    margin-right: px;
+
+}
+article strong{
+    color: blueviolet;
+}
+
+article ul{
+    padding: px;
+    text-align: left;
+    margin-left:15px ;
+}
+li code{
+    background-color: lightgray;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+article h2{
+    text-align: left;
+    font-weight: bold;
+    font-size: px;
+}
+article ol{
+    padding: px;
+    margin-left: px;
+    text-align: left;
+    margin-bottom: px;
+}
+
+/* TABELLE */
+table{
+margin-left: px;
+margin-top:px ;
+margin-bottom:px ;
+height: px;
+
+}
+tr{
+    vertical-align: text-bottom;
+    line-height: px;
+}
+table caption{
+    font-weight: bolder;
+    font-style: oblique;
+}
+table thead{
+    background-color: royalblue;
+    height: px;
+}
+thead th{
+    text-align: center;
+    color: white;
+}
+tr th{
+    height: 0px;
+}
+
+ tr.sfondo{ 
+    background-color:lightgray;
+}
+tr.ultimo{
+    border-bottom: solid ;
+    border-color: royalblue;
+}
+
+/* FORM */
+article p a{
+    color: rgb(18,152,182) ;
+}
+iframe{
+    border-radius: 15px;
+    height: 50px;
+    margin-bottom: px;
+}
+section{
+    background-color: lightgray;
+}
+section h2,p{
+    text-align: center;
+}
+section h2{
+    padding: px;
+}
+section p{
+    padding: px;
+    margin-left: 10px;
+}
+form button{
+    color: white;
+    background-color: royalblue;
+}
+/* ELEMENTI NELL' ASIDE */
+aside h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: px;
+}
+
+}
+
+/* FOOTER */
+footer{
+    padding: px;
+    text-align: center;
+    background-image: linear-gradient(rgb(2, 92, 92), rgb(1, 38, 38));
+    box-shadow: 0px 5px 10px;
+}
+footer p,address{
+    color: white;
+    margin-left: px;
+    margin-right: px;
+    line-height: 1.6;
+}
+footer a{
+    color: fuchsia;
+}
+footer p{
+    margin-bottom: px;
+}
+
