@@ -1,0 +1,52 @@
+/*320*/
+@media screen and (min-width: 321px){ 
+}
+/*480*/
+@media screen and (min-width: 481px){  
+    body, footer{
+        font-size: 1.5rem;
+    }
+}
+/*768*/
+@media screen and (min-width: 769px){  
+    body, footer{
+        font-size: 2rem;
+    }
+    fieldset{
+        text-align: center;
+    }
+    #username{
+        font-size: 2rem;
+    }
+    button{
+         font-size: 2rem;
+         padding: ; 
+        
+    }
+    .tabella{
+        width: 100%;
+    }
+
+}
+/*1024*/
+@media screen and (min-width: 1025px){ 
+
+    .tabella{
+        width: 768px;
+        margin: 0 auto;
+    }
+}
+/*1200*/
+@media screen and (min-width: 1201px){
+    body, footer{
+        font-size: 3rem;
+    }
+    .tabella{
+        width: 1024px;
+        margin: 0 auto;
+    }
+}
+/*stampa*/
+@media print{
+
+}
