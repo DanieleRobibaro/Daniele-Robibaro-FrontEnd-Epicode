@@ -1,0 +1,72 @@
+.box{
+    display: flex;
+    background-color: gray;
+    height: 500px;
+    width: 100%;
+}
+.post1{
+    background-color:rgba(249,249,199,255);
+    border:1px solid black;
+    font-size:2rem;
+    height: 35%;
+    width: 22%;
+    box-shadow: 0px 0px 30px 0px #000;
+    transform:rotate(-3deg);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.post2{
+    background-color: rgba(201,248,202,255);
+    border:1px solid black;
+    font-size:2rem;
+    height: 35%;
+    width: 22%;
+    box-shadow: 0px 0px 30px 0px #000;
+    transform: rotate(5deg);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.post3{
+    background-color: rgba(200,198,243,255);
+    border:1px solid black;
+    font-size:2rem;
+    height: 35%;
+    width: 22%;
+    box-shadow: 0px 0px 30px 0px #000;
+    transform: rotate(-5deg);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+#n1{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#cella{
+    display: flex;
+}
+
+.post1:hover{
+    transform: rotate(0);
+    transform: scale(1.2);
+    z-index: 1;
+}
+.post2:hover{
+    transform: rotate(0);
+    transform: scale(1.2);
+    z-index: 2;
+}
+.post3:hover{
+    transform: rotate(0);
+    transform: scale(1.2);
+    z-index: 3;
+}
+
+
+
