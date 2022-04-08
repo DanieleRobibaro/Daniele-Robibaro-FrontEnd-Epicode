@@ -1,0 +1,279 @@
+/* IMPOSTAZIONI GENERALI */
+body{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    position: absolute;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.5rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.5rem;
+}
+i::before{
+    color: #e42424;
+    font-size: 3rem;
+}
+.bottone{
+    font-size: 1.9rem;
+    color: white;
+    background-image: linear-gradient(to right, #6cc1e2, #392f7a);
+    margin: auto;
+}
+#n3{
+    background-color: #0c0633;
+}
+header{
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+footer{
+    background-color: rgb(238,238,238);
+}
+a{
+    text-decoration: none;
+}
+i{
+    color: red;
+}
+/* HEADER */
+nav a{
+    color: #828282;
+}
+
+/* MAIN */
+#n1{
+    background-image: url(/assets/images/banner.jpg);
+    background-position: center center;
+    color: white;
+    text-align: center;
+}
+.primo{
+    text-align: center;
+}
+#n2{
+    text-align: center;
+}
+#n2 section{
+    margin-bottom: 40px;
+}
+#n2 h3{
+    text-align: center;
+}
+#n3{
+    text-align: center;
+    color: white;
+}
+#n4{
+    text-align: center;
+}
+#n4 h3{
+    display: inline;
+}
+
+.chi-siamo{
+    text-align: center;
+
+} .chi-siamo p{
+    margin: 30px;
+}
+#n6 p{
+    padding: 20px;
+
+}
+.contatti h1{
+    text-align: center;
+}
+.contatti section{
+    margin: auto;
+    text-align: center;
+}
+#n8 input{
+    width: 100%;
+}
+/* TABELLA */
+table{
+    margin: 30px 320px 30px 320px;
+}
+caption{
+    font-size: 3rem ;
+}
+td{
+    margin: 10px;
+}
+tr:nth-child(2){
+    background-color: #d2dce7;
+}
+tr:nth-child(4){
+    background-color: #d2dce7;
+}
+
+/* FOOTER */
+ footer section{
+    margin: 30px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width:300px) and (max-width:800px) {
+    #menu{
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s;
+    }
+    #apri{
+        display: none;
+    }
+    input:checked + #menu{
+        height: 200px;
+    }
+    .nav{
+        display: flex;
+    }
+    #nav1{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .box1, .box2{
+        display: flex;
+    }
+    #n1, #n3, #n5{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #n2, #n4{
+        flex-direction: column;
+    }
+    tr:nth-child(1){
+        background-color: #d2dce7;
+    }
+    #n6{
+        flex-direction: column;
+
+    }
+    #n7{
+        flex-direction: column;
+
+    }
+    #n8{
+        flex-direction: column;
+        
+    }
+
+    
+}
+@media screen and (min-width:800px) and (max-width:1024px) {
+    .nav{
+        display: flex;
+    }
+    #nav1{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header{
+        text-decoration: none;
+    }
+    header input{
+        display: none;
+    }
+    header label{
+        display: none;
+    }
+    header nav li {
+        list-style: none;
+        display: inline-block;
+        margin: 4px;
+    }
+
+    .box1, .box2{
+        display: flex;
+    }
+    #n1, #n3{
+        flex-direction: column;
+    }
+    #n2, #n4, #n5{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    tr:nth-child(1){
+        background-color: #66819f;
+    }
+    #n6{
+        flex-direction: row;
+
+    }
+    #n7{
+        flex-direction: column;
+
+    }
+    #n8{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+}
+@media screen and (min-width:1024px) {
+    .nav{
+        display: flex;
+    }
+    #nav1{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header{
+        text-decoration: none;
+    }
+    header label{
+        display: none;
+    }
+    header input{
+        display: none;
+    }
+    header nav li {
+        list-style: none;
+        display: inline-block;
+        margin: 4px;
+    }tr:nth-child(1){
+        background-color: #66819f;
+    }
+    .box1, .box2{
+        display: flex;
+    }
+    #n1, #n3{
+        flex-direction: column;
+    }
+    #n2, #n4, #n5{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    section{
+        margin: 20px;
+
+    }tr:nth-child(1){
+        background-color: #66819f;
+    }
+    #n6{
+        flex-direction: row;
+
+    }
+    #n7{
+        flex-direction: column;
+
+    }
+    #n8{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+}
+
