@@ -27,6 +27,12 @@ i::before{
     background-image: linear-gradient(to right, #6cc1e2, #392f7a);
     margin: auto;
 }
+.bottone-speciale{
+    font-size: 1.9rem;
+    color: white;
+    background-image: linear-gradient(to right, #6cc1e2, #392f7a);
+    margin: auto;
+}
 #n3{
     background-color: #0c0633;
 }
@@ -56,6 +62,7 @@ nav a{
     color: white;
     text-align: center;
 }
+
 .primo{
     text-align: center;
 }
@@ -276,4 +283,18 @@ tr:nth-child(4){
     }
 
 }
+/* animazioni */
+a.bottone-speciale{
+    animation-name: pulsa;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    box-shadow: 0px 0px 15px black, 0px 0px 15px black;
+}
+@keyframes pulsa{
+    0%{ box-shadow: 0px 0px 50px black, 0px 0px 50px black;}
+    50%{ box-shadow: 0px 0px 1px black, 0px 0px 1px black;}
+    100%{ box-shadow: 0px 0px 50px black, 0px 0px 50px black;}
+   
+}
+/* purtoppo non sono riuscito a lavorare bene su tutto(come tutti i margin e i padding per farlo piu simile possibile all'esempio) a causa del browser che non mi permetteva di ispezione bene la pagina in quanto mi zoommava, tutto era impraticabile */
 
