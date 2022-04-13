@@ -1,0 +1,10 @@
+.blocco{
+    display: inline-block;
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
