@@ -1,0 +1,26 @@
+.calcolatrice {
+  display: grid;
+  min-height: 100vh;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(6, 100px);
+}
+.display {
+  grid-column: 1 / -1;
+  font-size: 2rem;
+  border: none;
+  background-image: linear-gradient(#474d4d, #3a3d41);
+  color: lightslategrey;
+}
+.span-4 {
+  grid-column: span 4;
+}
+.bottone {
+  font-size: 2rem;
+  cursor: pointer;
+  color: lightslategrey;
+}
+.operazione {
+  background-color: coral;
+}

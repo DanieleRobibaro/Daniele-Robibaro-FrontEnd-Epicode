@@ -29,3 +29,5 @@ function costo(s){
     return s >= 100 ? s - s * 0.3 : s;
 }
 console.log(costo(300));
+
+
