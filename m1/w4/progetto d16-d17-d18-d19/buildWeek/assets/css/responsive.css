@@ -1,0 +1,378 @@
+/* nav */
+@media screen and (max-width:768px){
+    .menu{
+        display:flex;
+        flex-direction:column;
+        position:absolute;
+        top:100%;
+        left:0;
+        height:0;
+        overflow:hidden;
+        transition: all 1000ms ease;
+        z-index:150;
+    }
+
+    #menunav:checked + .menu{
+        height:25em;
+        border: 0px solid transparent;
+        background-color: rgba(255, 255, 255, 0.89);
+        width: 100%;
+        margin-top: -3px;
+        
+        
+    }
+    #labelnav{
+        display:block;
+    }
+    .leopoldo{
+        min-height:30vh;
+    }
+    #barremenu{
+        color:#FF5333;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width:1024px) {
+    .post{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .recipe{
+        width: 50%;
+    }
+    .pic{
+        width: 50%;
+        margin-bottom: -7px;
+    }
+    .pic img{
+        height: 100%;
+    }
+    #blog-button{
+        margin-left: 0;
+        margin-top: 40px;
+        width: 50%;
+        padding: 10px 10px;
+        background-color: #ff530a;
+
+    } 
+    .container-blog .row{
+        width: 90%;
+        
+    }   
+}
+
+@media screen and (max-width:768px) {
+    .post{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .recipe{
+        width: 100%;
+    }
+    .pic{
+        width: 100%;
+        margin-bottom: -7px;
+    }
+    .pic img{
+        height: 100%;
+    }
+    #blog-button{
+        margin-left: 0;
+        margin-top: 40px;
+        width: 50%;
+        padding: 10px 10px;
+    } 
+    .container-blog .row{
+        width: 90%;
+    }   
+    .triangle1, .triangle2{
+        opacity: 0;
+    }
+ }
+    /* slider */
+    @media screen and (max-width:500px){
+        .slider-container2{
+          width: 250px;
+        }
+        .slide-img{
+          width: 250px;
+          padding-right: 25px;
+        }
+        #slider h3{
+          width: 250px;
+          
+        }
+        #slider .next{
+          bottom: 75%;
+          right: 25%;
+  
+        }
+        #slider{
+          width: 100%;
+          margin-left: 0;
+          padding: 10px 0;
+        }
+        #slider .center{
+            width: 220px;
+            padding: 15px;
+  
+        }
+  
+      }
+      @media screen and (min-width:500px) and (max-width:768px){
+        .slider-container2{
+          width: 470px;
+        }
+        .slide-img{
+          width: 235px;
+        }
+        #slider h3{
+          width: 470px;
+          
+        }
+        #slider .next{
+        
+          bottom: 75%;
+          right: 25%;
+  
+        }
+        #slider{
+          width: 100%;
+        }
+        #slider .center{
+          width: 470px;
+  
+        }
+  
+  
+  
+      }
+      @media screen and (min-width:769px) and (max-width:1023px){
+        .slider-container2{
+          width: 640px;
+        }
+        .slide-img{
+          width: 320px;
+        }
+        #slider h3{
+          width: 640px;
+          
+        }
+        #slider .next{
+        
+          bottom: 77%;
+          right: 30%;
+  
+        }
+        #slider{
+          width: 100%;
+        }
+        #slider .center{
+          width: 640px;
+  
+        }
+  
+  
+  
+      }
+      @media screen and (min-width:1024px) and (max-width:1439px){
+        .slider-container2{
+          width: 860px;
+        }
+        .slide-img{
+          width: 215px;
+        }
+       #slider h3{
+          width: 860px;
+          
+        }
+        #slider .next{
+        
+          bottom: 75%;
+          right: 10%;
+  
+        }
+        #slider{
+          width: 100%;
+        }
+        #slider .center{
+          width: 860px;
+  
+        }
+  
+  
+      }
+      
+      @media screen and (min-width:1440px){
+        .slider-container2{
+          width: 1060px;
+        }
+        .slide-img{
+          width: 265px;
+        }
+        #slider h3{
+          width: 1060px;
+          
+        }
+        #slider .next{
+          
+          bottom: 75%;
+          right: 15%;
+  
+        }
+        #slider{
+          width: 100%;
+        }
+        #slider .center{
+          width: 1060px;
+  
+        }
+  
+      }
+    /* form */
+    #newsletter form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #newsletter form input{
+        margin-bottom: -20px;
+    }
+    #newsletter form button{
+        transform: scaleX(0.7);
+        margin-left: -38px;
+        
+    }
+
+
+
+
+
+/*responsive gabri*/
+
+@media screen and (max-width: 768px) {
+
+#sezionegabri{
+    font-family: myfont;
+}
+
+.primolorem{
+    padding-bottom: 15px;
+    
+    
+}
+
+    .primotitolo{
+        text-align: center;
+        font-size: 1em;
+        text-decoration: bold;
+    }
+    .contprezzo{
+       margin-bottom: 30px;
+    }
+
+.titolimenu{
+    width: 100%;
+}
+
+    .prezzi{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .testomenu{
+        width: 100%;
+    }
+    
+    .divprezzo{
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*responsive riccardo*/
+
+@media screen and (max-width:991px){
+    .rowf{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info{
+        width: max-content;
+        margin: right 20px;
+    }
+
+    .info li{
+        display: inline-block;
+        justify-content: space-between;
+        padding-right: 20px;
+    }
+
+    .latest {
+        width: 700px;
+    }
+}
+     @media screen and (max-width: 768px)  {
+        .rowf{
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .info li{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .block .button{
+            width: 100%;
+        }
+
+        .end{
+            width: 100%;
+            display: inline-block;
+        }
+
+        .latest h3{
+            padding-top: 20px;
+        }
+
+        .blog{
+            padding-bottom: 25px;
+            width: 200px;
+        }
+
+        .gallery{
+            width: 50px;
+        }
+    }   
+        
+    
+
+  
