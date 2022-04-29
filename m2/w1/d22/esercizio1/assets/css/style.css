@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+   height: 100vh;
+   background-color: blue;
+}
+.container{
+    width: 840px;
+    height: 640px;
+    margin: 0 auto;
+    border: 2px solid green;
+   
+    
+}
+.carosello{
+    position: relative;
+    width: 440px;
+    height: 340px;
+    margin: 0 auto;
+    border: 2px solid red;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+
+   
+   
+}
+.slide{
+    border: 2px solid yellow;
+    width: 440px;
+    height: 340px;
+    position: absolute;
+}
+img{
+    width: 100%;  
+}
+.next, .prev {
+   
+  }
+  .prev{
+      
+  }

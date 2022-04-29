@@ -1,0 +1,70 @@
+body {
+    height: 100vh;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 50px;
+    line-height: 1.3;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+#nome {
+    color: #b3bc20;
+    font-size: 40px;
+}
+
+.fatto {
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
+.selezione {
+    color: #F00;
+}
+
+.dropbtn {
+    background-color: #1c15e7;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #37a0f0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.panel {
+    display: none;
+    position: absolute;
+    background-color: #907cf5;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+}
+
+.panel a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #caccd1
+}
+
+.mostra {
+    display: block;
+}
