@@ -1,0 +1,61 @@
+@import 'buttons';
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+body{
+    background-color: $viola;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    h1{
+        font-size: 50px;
+        margin: 0;
+        font-weight: bold;
+    }
+}
+header{
+    margin: 50px;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+li{
+    padding-left: 20px;
+   
+    a{
+        text-decoration: none;
+        color: $bianco;
+        font-size: 30px;
+        &:hover{
+            color: $arancione;
+        }
+    }
+}
+.showcase-content{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    p{
+        line-height: 1.9;
+        font-size: 29px;
+        margin: 0;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+    h1{
+        font-size: 100px;
+        margin: 0;
+        font-weight: bold;
+    }
+    div{
+       padding-top: 20%;
+       width: 50%;
+    }
+    img{
+        width: 50%;
+    }
+}

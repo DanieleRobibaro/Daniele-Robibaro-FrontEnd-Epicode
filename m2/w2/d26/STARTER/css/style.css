@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+.btn-primary, .btn-secondary {
+  color: white;
+  text-decoration: none;
+  padding: 30px;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 25px;
+  box-shadow: 0 9px #999; }
+  .btn-primary:active, .btn-secondary:active {
+    transform: translateY(4px);
+    box-shadow: 0 5px #666; }
+
+.btn-primary {
+  background-color: #2d6df8; }
+
+.btn-secondary {
+  background-color: #f18e39; }
+
+body {
+  background-color: #592cba;
+  font-family: 'Open Sans', sans-serif; }
+
+nav {
+  display: flex;
+  justify-content: space-between; }
+  nav h1 {
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold; }
+
+header {
+  margin: 50px; }
+
+ul {
+  list-style: none;
+  display: flex; }
+
+li {
+  padding-left: 20px; }
+  li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px; }
+    li a:hover {
+      color: #f18e39; }
+
+.showcase-content {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between; }
+  .showcase-content p {
+    line-height: 1.9;
+    font-size: 29px;
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: bold; }
+  .showcase-content h1 {
+    font-size: 100px;
+    margin: 0;
+    font-weight: bold; }
+  .showcase-content div {
+    padding-top: 20%;
+    width: 50%; }
+  .showcase-content img {
+    width: 50%; }

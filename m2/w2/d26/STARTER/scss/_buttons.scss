@@ -1,0 +1,23 @@
+@import 'variables';
+.btn-primary, .btn-secondary {
+    color: $bianco;
+    text-decoration: none;
+    padding: 30px;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+    box-shadow: 0 9px #999;
+    &:active{
+        transform: translateY(4px);
+        box-shadow: 0 5px #666;
+     
+    }
+}
+.btn-primary{
+    background-color: $blu;
+
+}
+.btn-secondary{
+    background-color: $arancione;
+
+}
