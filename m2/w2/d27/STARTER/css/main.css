@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+* {
+  font-family: 'Open Sans', sans-serif; }
+
+header #main-menu {
+  background-color: #1a1446;
+  padding: 2px;
+  border-radius: 12px;
+  box-shadow: 5px 10px 10px #f0cebc;
+  border: 3px ridge white; }
+  header #main-menu ul {
+    display: flex;
+    list-style: none; }
+    header #main-menu ul li {
+      margin-left: 15px; }
+      header #main-menu ul li a {
+        text-decoration: none;
+        color: white; }
+
+#main {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 15%;
+  margin-left: 15%;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  #main #content {
+    flex-basis: 75%; }
+  #main #sidebar {
+    flex-basis: 15%; }
+    #main #sidebar ul {
+      list-style: none; }
+      #main #sidebar ul li {
+        margin-top: 30px;
+        border-bottom: dotted #9D9D9D 2px;
+        width: 100%; }
+
+#footer {
+  background-color: #6286f9;
+  padding: 40px; }
+
+#introduction .warning-button {
+  background-color: #fba20d;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  border-style: outset;
+  border-width: 2px;
+  border-color: white; }
+
+#introduction a {
+  color: #fba20d;
+  text-decoration: none; }
+
+#promo a {
+  color: #fba20d;
+  text-decoration: none; }
