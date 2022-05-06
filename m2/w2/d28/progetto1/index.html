@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  
+  </head>
+  <body>
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md p-4 fixed-top bg-gradient ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="bi bi-bootstrap-fill"></i> BootPro</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Servizi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">contatti</a>
+                </li>
+                <li class="nav-item"><a href="" class="nav-link primo"><i class="bi bi-facebook"></i></a></li>
+                <li class="nav-item"><a href="" class="nav-link secondo"><i class="bi bi-twitch"></i></a></li>
+                <li class="nav-item"><a href="" class="nav-link terzo"><i class="bi bi-whatsapp"></i></a></li>
+                <li class="nav-item"><a href="" class="nav-link quarto"><i class="bi bi-discord"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="flex-shrink-0">
+        <!-- prima sezione e prima cta -->
+        <section id="first-cta" class="first-cta">
+            <div class="container">
+                <h1 class="display-3 mt-5">La nostra passione si erge sopra ogni cosa</h1>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud..</p>
+                <a href="#" class="btn btn-primary">Iscriviti alla lista contatti</a>
+            </div>
+        </section>
+
+        <!-- Servizi disponibili utilizzando le cards. Sono tre. -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <i class="bi-briefcase-fill"></i>
+                        <h3 class="display-6">Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="bi-person-plus-fill"></i>
+                        <h3 class="display-6">Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="bi-binoculars-fill"></i>
+                        <h3 class="display-6">Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inserisco la sezione delle partnerships -->
+        <section id="partnerships" class="partnerships">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#f5f5f5" fill-opacity="1"
+                    d="M0,96L60,90.7C120,85,240,75,360,69.3C480,64,600,64,720,90.7C840,117,960,171,1080,170.7C1200,171,1320,117,1380,90.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                </path>
+            </svg>
+            <div class="container">
+                <div class="row text-center">
+                    <h4 class="display-4 mb-3">Partnerships</h4>
+                    <div class="separator"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 partnerships-logo"><img src="img/company-1.png" alt=""
+                            class="img-fluid"></div>
+                    <div class="col-md-3 col-lg-3 partnerships-logo"><img src="img/company-2.png" alt=""
+                            class="img-fluid"></div>
+                    <div class="col-md-3 col-lg-3 partnerships-logo"><img src="img/company-3.png" alt=""
+                            class="img-fluid"></div>
+                    <div class="col-md-3 col-lg-3 partnerships-logo"><img src="img/company-4.png" alt=""
+                            class="img-fluid"></div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#f5f5f5" fill-opacity="1"
+                    d="M0,96L60,90.7C120,85,240,75,360,69.3C480,64,600,64,720,90.7C840,117,960,171,1080,170.7C1200,171,1320,117,1380,90.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                </path>
+            </svg>
+        </section>
+
+        <!-- Posiziono la sezione delle recensioni/testimonianze -->
+        <section id="reviews" class="reviews">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#f5f5f5" fill-opacity="1"
+                    d="M0,192L60,197.3C120,203,240,213,360,192C480,171,600,117,720,112C840,107,960,149,1080,149.3C1200,149,1320,107,1380,85.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                </path>
+            </svg>
+            <div class="container">
+                <div class="row text-center py-5">
+                    <h4 class="display-4 mb-3">Le opinioni dei nostri clienti</h4>
+                    <div class="separator"></div>
+                    <div class="row align-items-center">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- Testimonianza 1 -->
+                                <div class="carousel-item active">
+                                    <!-- Inizio la creazione delle card per il carosello -->
+                                    <div class="reviews-card">
+                                        <p class="lh-lg">
+                                            <i class="bi bi-chat-right-quote"></i>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                    <div class="reviews-img">
+                                        <img src="img/reviews/reviews-1.jpg" alt="reviews-1"
+                                            class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="reviews-name">
+                                        <h3>Jamie Batty</h3>
+                                    </div>
+                                </div>
+                                <!-- Testimonianza 2 -->
+                                <div class="carousel-item">
+                                    <!-- Inizio la creazione delle card per il carosello -->
+                                    <div class="reviews-card">
+                                        <p class="lh-lg">
+                                            <i class="bi bi-chat-right-quote"></i>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua.
+
+                                        </p>
+                                    </div>
+                                    <div class="reviews-img">
+                                        <img src="img/reviews/reviews-2.jpg" alt="reviews-2"
+                                            class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="reviews-name">
+                                        <h3>Samantha Loret</h3>
+                                    </div>
+                                </div>
+                                <!-- Testimonianza 3 -->
+                                <div class="carousel-item">
+                                    <!-- Inizio la creazione delle card per il carosello -->
+                                    <div class="reviews-card">
+                                        <p class="lh-lg">
+                                            <i class="bi bi-chat-right-quote"></i>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                    <div class="reviews-img">
+                                        <img src="img/reviews/reviews-3.jpg" alt="reviews-3"
+                                            class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="reviews-name">
+                                        <h3>Mike Winter</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+    </main>
+
+      <footer class="footer mt-auto py-3 bg-gradient">
+        <div class="container text-center">
+            <div class="row py-4">
+                <div class="col-md-3 py-4">
+                    <a class="navbar-brand" href="#">BootPro</a>
+                </div>
+                <div class="col-md-3">
+                    <h4>Mission & Vision</h4>
+                    <a class="nav-link" aria-current="page" href="#">Lorem ipsum</a>
+                    <a class="nav-link" aria-current="page" href="#">Lorem ipsum</a>
+                    <a class="nav-link" aria-current="page" href="#">Lorem ipsum</a>
+                </div>
+                <div class="col-md-3">
+                    <h4>Dove siamo</h4>
+                    <a class="nav-link" aria-current="page" href="#">Lorem ipsum</a>
+                    <a class="nav-link" aria-current="page" href="#">Lorem ipsum</a>
+                    <a class="nav-link" aria-current="page" href="#">Lorem ipsum</a>
+                </div>
+                <div class="col-md-3">
+                    <h4>Contatti</h4>
+                    <a class="nav-link" aria-current="page" href="#">Lorem ipsum</a>
+                    <a class="nav-link" aria-current="page" href="#">Lorem ipsum</a>
+                    <a class="nav-link" aria-current="page" href="#">Lorem ipsum</a>
+                </div>
+            </div>
+            <span>&copy; Daniele per Epicode School </span>
+        </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
