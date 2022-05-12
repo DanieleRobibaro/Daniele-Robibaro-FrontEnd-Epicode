@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><span id="tempo"></span> secondi di sessione aperta</p>
+
+    <script>
+    //   let tempo = document.querySelector("#tempo");
+    //   let timer = startTimer();
+
+    //   function startTimer() {
+    //     sessionStorage.setItem("tempo", 1);
+  
+    //     let timerSession = sessionStorage.getItem("tempo");
+    //     console.log(timerSession);
+
+
+    //     interval = setInterval(function () {
+    //       tempo.innerHTML = timerSession;
+    //       timerSession++;
+
+    //     }, 1000);
+
+        
+    //   }
+        let t = 0
+
+        if(sessionStorage.getItem("tempo")){
+            t = sessionStorage.getItem("tempo");
+        }
+
+
+        setInterval(function () {
+            t++;
+
+            sessionStorage.setItem("tempo", t)
+
+            document.querySelector("#tempo").innerHTML = t
+
+
+        },1000)
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
