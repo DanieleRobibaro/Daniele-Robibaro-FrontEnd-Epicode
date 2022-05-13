@@ -17,7 +17,7 @@
 
     <script>
 
-        const PAGINA = 'https://sofin.wp-admin.it/public/api/v1/user'
+        const PAGINA = 'https://jsonplaceholder.typicode.com/users'
 
         let tabella = document.querySelector('#utenti')
 
@@ -27,7 +27,7 @@
             console.log(res)
 
 
-            let campiVisualizzati = ['name','lastname','email']
+            let campiVisualizzati = ['name','username','email']
 
             let trH = document.createElement('tr')
             for(campo of campiVisualizzati){
@@ -37,11 +37,11 @@
             }
             tabella.append(trH)
 
-            for(let utente of res){
+            for(utente of res){
                 let tr = document.createElement('tr')
                 
 
-                for(let prop in utente){
+                for(prop in utente){
                     
                     if(campiVisualizzati.includes(prop)){
                         let key = prop
