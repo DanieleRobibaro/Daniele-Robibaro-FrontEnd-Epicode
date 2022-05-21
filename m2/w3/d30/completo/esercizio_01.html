@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classi</title>
+</head>
+<body>
+<script>
+    class Person {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        compareAge(other) {
+            if (this.age < other.age){
+                return `${other.name} è più vecchio di ${this.name}.`
+            }else if (this.age > other.age){
+                return `${other.name} è più giovane di ${this.name}.`
+            }else{
+                return `${other.name} è della stessa età di ${this.name}.`
+            }
+        }
+    }
+    p1 = new Person("Luca", 24)
+    p2 = new Person("Paolo", 36)
+    p3 = new Person("Mario", 24)
+    console.log(p1.compareAge(p2));
+    console.log(p2.compareAge(p1));
+    console.log(p1.compareAge(p3));
+</script>
+</body>
+</html>

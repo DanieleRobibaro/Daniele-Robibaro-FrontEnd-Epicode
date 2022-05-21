@@ -19,7 +19,7 @@ fetch(USERS)
       "lastName",
       "gender",
       "profileURL",
-      "email",
+      "email"
     ];
 
     let trHead = document.createElement("tr");
@@ -55,3 +55,4 @@ fetch(USERS)
       tabella.append(tBody);
     }
   });
+
