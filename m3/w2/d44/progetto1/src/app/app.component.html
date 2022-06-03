@@ -1,0 +1,35 @@
+<h1 class="bg-primary bg-gradient">{{title}}</h1>
+<h2 class="bg-primary bg-gradient">Benvenuto, {{name}}</h2>
+
+<button (click)="aggiungi()" type="button" class="btn btn-primary">Add</button>
+
+<table *ngIf="arr.length > 0" class="table">
+    <thead class="table-dark">
+        <tr>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Azioni</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let u of arr">
+            <td>{{u.cognome}}</td>
+            <td>{{u.nome}}</td>
+            <td>
+                <button (click)="dettagli(u.id)" type="button" class="btn btn-info">modifica</button>
+                <button (click)="elimina(u.id)" type="button" class="btn btn-danger">elimina</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div>
+    <h1>Dettagli</h1>
+    <button (click)="utenteSelezionato = null" type="button" class="btn btn-dark">chiudi</button>
+    <ul>
+        <li *ngFor="let item of utenteSelezionato | keyvalue">
+            {{item.key}}: {{item.value}}
+
+        </li>
+    </ul>
+</div>

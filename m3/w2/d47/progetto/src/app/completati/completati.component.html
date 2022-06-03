@@ -1,0 +1,7 @@
+<div *ngFor="let todo of doTodo">
+  {{ todo.id }}
+  {{ todo.title }}
+  <input class="form-check-input" type="checkbox" checked disabled />
+  <button (click)="elimina(todo.id)">elimina</button>
+</div>
+<div *ngIf="doTodo.length < 1"><h2>Ops,non ci sono task</h2></div>

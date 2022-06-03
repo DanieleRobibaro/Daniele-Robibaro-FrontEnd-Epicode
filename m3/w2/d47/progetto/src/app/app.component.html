@@ -1,0 +1,16 @@
+<nav>
+  <ul>
+    <li>
+      <a
+        [routerLink]="['/']"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Todo</a
+      >
+    </li>
+    <li>
+      <a [routerLink]="['/completed']" routerLinkActive="active">Completati</a>
+    </li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>
