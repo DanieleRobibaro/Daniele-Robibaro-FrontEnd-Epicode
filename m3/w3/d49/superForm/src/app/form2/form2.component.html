@@ -1,0 +1,71 @@
+<div class="container">
+    <form [formGroup]="formG" (ngSubmit)="submit()" #f>
+
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input
+            formControlName="nome" 
+            type="nome" 
+            name="nome"
+            id="nome" 
+            type="nome"
+            class="form-control" 
+            required>
+            <div class="btn btn-danger disabled" *ngIf="getControl('nome').invalid && getControl('nome').touched">Campo Obbligatorio</div>
+        </div>
+
+        <div class="form-group">
+            <label for="alterEgo">Alter Ego</label>
+            <input 
+            type="alterEgo" 
+            name="alterEgo"
+            id="alterEgo" 
+            type="alterEgo"
+            class="form-control" 
+            required
+            >
+            <div class="btn btn-danger disabled" *ngIf="getControl('alterEgo').invalid && getControl('alterEgo').touched">Campo Obbligatorio</div>
+        </div>
+
+        <!-- <h4>Super Potere</h4>
+        <button (click)="addPower()" class="btn btn-primary" type="button">Aggiungi Potere</button>
+        <div class="form-group" *ngFor="let power of getFormArrey('powers'); let i = index" [formControlName]="i">
+            <input type="text" class="form-control">
+        </div> -->
+
+         <div class="form-group">
+            <label for="nemico">Nemico</label>
+            <input 
+            type="nemico" 
+            name="nemico"
+            id="nemico" 
+            type="nemico"
+            class="form-control"  
+            maxlength="10">
+        </div>
+
+        <div class="form-group">
+            <label for="pianeta">Pianeta</label>
+            <input 
+            formControlName="pianeta"
+            type="pianeta" 
+            name="pianeta"
+            id="pianeta" 
+            type="pianeta"
+            class="form-control"  
+            minlength="5" 
+            required
+            >
+            <div class="btn btn-danger disabled" *ngIf="getControl('pianeta').touched &&getErrorControl('pianeta', 'minlength')">Devi inserire minimo 5 caratteri</div>
+
+        </div>
+
+        <!-- <h4>Super Potere</h4>
+        <button (click)="addWeakness()" class="btn btn-primary" type="button">Aggiungi Potere</button>
+        <div class="form-group" *ngFor="let power of getFormArrey('powers'); let i = index" [formControlName]="i">
+            <input type="text" class="form-control">
+        </div> -->
+
+        <button type="submit" [disabled]="formG.invalid" class="btn btn-info">Invia</button>
+    </form>
+</div>

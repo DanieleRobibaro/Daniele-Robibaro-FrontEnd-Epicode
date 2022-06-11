@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "email": "haqyjefo@mailinator.com",
+      "password": "$2a$10$GdYZsaSBrCVumzg5mkxKXuuRKOsP.JZvhmKWKwbGeZv1aJ7Fv4F2G",
+      "id": 1
+    },
+    {
+      "email": "admin@admin.it",
+      "password": "$2a$10$Wquj7HJAO62Du78j2BlKK.5aXLV.a697945sya2PVOw0fMgpzyxsy",
+      "id": 2
+    },
+    {
+      "email": "mafex@mailinator.com",
+      "password": "$2a$10$3JD6tlAa2ASL0oQ1iCj4JukqiGy0gMFcT1ReUU0FbNlK8zTws36jm",
+      "id": 3
+    },
+    {
+      "email": "nijahov@mailinator.com",
+      "password": "$2a$10$4qZEbg33BBVdYFG7ow1S6ewgQnxBTMdeGKyjZ8soBHnQMo/yIw.KG",
+      "id": 4
+    },
+    {
+      "email": "ropowydovu@mailinator.com",
+      "password": "$2a$10$nek7FG7h29VXWVTZv/d8o.JPboWUs3onOBlyQ5Zqj2Fj1/emOwb9q",
+      "id": 5
+    },
+    {
+      "email": "jekifuvovi@mailinator.com",
+      "password": "$2a$10$L4SKbKzkE2TR.VUnl6nmTeBRh9kuF4SH6XNvKNyniW0Zzux.CdaWO",
+      "id": 6
+    }
+  ],
+  "movies": []
+}
