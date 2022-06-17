@@ -1,0 +1,24 @@
+.btn-secondary {
+  background-color: gainsboro;
+  border-color: gainsboro;
+  &:hover {
+    background-color: gray;
+    border-color: gray;
+  }
+}
+
+table {
+  .body-td,
+  .title-td {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.card-body {
+  overflow-y: scroll;
+  text-overflow: ellipsis;
+  // white-space: nowrap;
+}

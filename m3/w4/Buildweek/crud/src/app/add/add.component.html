@@ -1,0 +1,24 @@
+<div class="wrapper m-3">
+  <form action="" class="" #f="ngForm">
+    <label for="title" class="form-label"><h1>Title</h1></label>
+    <input
+      class="form-control form-control-lg mb-4"
+      type="text"
+      placeholder="Title here..."
+      name="title"
+      id="title"
+      [(ngModel)]="data.title"
+    />
+    <label for="body" class="form-label"><h1>Content</h1></label>
+    <textarea
+      class="form-control form-control-lg mb-3"
+      name="body"
+      id="body"
+      cols="30"
+      rows="10"
+      placeholder="Content here..."
+      [(ngModel)]="data.body"
+    ></textarea>
+    <button (click)="addPost()" class="btn btn-success">Create post</button>
+  </form>
+</div>

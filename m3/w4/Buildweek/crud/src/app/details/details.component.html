@@ -1,0 +1,29 @@
+<form action="">
+  <input
+    class="form-control"
+    type="number"
+    placeholder="ID"
+    name="id"
+    [(ngModel)]="num"
+  />
+  <button (click)="getPost(5)" class="btn btn-primary">Get post</button>
+</form>
+<hr />
+<form action="" class="" #f="ngForm">
+  <input
+    class="form-control"
+    type="text"
+    placeholder="Titolo"
+    name="title"
+    [(ngModel)]="data.title"
+  />
+  <textarea
+    class="form-control"
+    name="body"
+    id=""
+    cols="30"
+    rows="10"
+    [(ngModel)]="data.body"
+  ></textarea>
+  <button (click)="detailsPost()" class="btn btn-warning">Edit post</button>
+</form>
