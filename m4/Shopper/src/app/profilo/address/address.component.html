@@ -1,0 +1,109 @@
+<div class="my-5 py-5">
+  <h1 class="text-center">ADDRESS SETTINGS</h1>
+  <div class="container my-5 py-5">
+    <div class="row">
+      <div class="col-md-4 mx-auto">
+        <div class="form">
+          <form class="needs-validation" novalidate method="post" name="register">
+            <div class="form-group my-3">
+              <label for="validationCustom01" class="form-label">First Name</label>
+              <input
+                id="validationCustom01"
+                required
+                type="text"
+                name="firstname"
+                class="form-control"
+                placeholder="Firstname"
+                [(ngModel)]="user.firstname"
+              />
+            </div>
+            <div class="form-group my-3">
+              <label>Last Name</label>
+              <input
+                type="text"
+                name="lastname"
+                class="form-control"
+                placeholder="Lastname"
+                [(ngModel)]="user.lastname"
+              />
+            </div>
+            <div class="form-group my-3">
+              <label>Email</label>
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Email"
+                [(ngModel)]="user.email"
+              />
+            </div>
+            <div class="form-group my-3">
+              <label>State</label>
+              <input
+                required
+                type="text"
+                name="state"
+                class="form-control"
+                placeholder="State"
+                [(ngModel)]="user.address.State"
+              />
+            </div>
+            <div class="form-group my-3">
+              <label>Country</label>
+              <input
+                required
+                type="text"
+                name="country"
+                class="form-control"
+                placeholder="Country"
+                [(ngModel)]="user.address.Country"
+              />
+            </div>
+            <div class="form-group my-3">
+              <label>City</label>
+              <input
+                required
+                type="text"
+                name="City"
+                class="form-control"
+                placeholder="City"
+                [(ngModel)]="user.address.City"
+              />
+            </div>
+            <div class="form-group my-3">
+              <label>ZipCode</label>
+              <input
+                required
+                type="number"
+                name="ZipCode"
+                class="form-control"
+                placeholder="ZipCode"
+                [(ngModel)]="user.address.ZipCode"
+              />
+            </div>
+            <div class="form-group my-3">
+              <label>Street</label>
+              <input
+                required
+                type="text"
+                name="Street"
+                class="form-control"
+                placeholder="Street"
+                [(ngModel)]="user.address.Street"
+              />
+            </div>
+            <div class="text-center">
+              <button
+                type="submit"
+                class="btn btn-primary send-button tx-tfm rounded-pill"
+                (click)="editUser()"
+              >
+                Update
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

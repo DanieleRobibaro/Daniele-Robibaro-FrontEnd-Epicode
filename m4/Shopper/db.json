@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "email": "admin@admin.it",
+      "password": "$2a$10$rky8Gb/VUrC5RV5aDgdLIO8YjfMsBwjLX6j.owqe2HqVBIv7XoOra",
+      "firstname": "Admin",
+      "lastname": "Admin",
+      "address": {
+        "State": "roma",
+        "Country": "",
+        "City": "",
+        "ZipCode": "",
+        "Street": ""
+      },
+      "id": 1
+    }
+  ]
+}

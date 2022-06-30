@@ -36,6 +36,7 @@ export class DetailsPostComponent implements OnInit {
       let id = +p['id'];
       this.getPost(id);
     });
+    
   }
 
   getPost(id: number) {
@@ -47,6 +48,7 @@ export class DetailsPostComponent implements OnInit {
         this.spinner.hide();
       },
     });
+    console.log(this.data.id)
   }
 
   detailsPost() {
@@ -79,6 +81,7 @@ export class DetailsPostComponent implements OnInit {
         );
       }
     });
+    console.log(this.data.id)
   }
 
   deletePost() {
