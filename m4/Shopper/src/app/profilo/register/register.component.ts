@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ISignUp, ISignUpResponse } from 'src/app/interface-class/iauthdata';
+import { ISignUpResponse } from 'src/app/interface-class/iauthdata';
 import { User } from 'src/app/interface-class/user';
 import { AuthService } from 'src/app/service/auth.service';
+import Swal from 'sweetalert2';
 
-import { UsersService } from 'src/app/service/users.service';
+
 
 @Component({
   selector: 'app-register',
@@ -17,6 +18,9 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  onSubmit(){
+  }
 
   user:User = new User
 
@@ -25,14 +29,13 @@ export class RegisterComponent implements OnInit {
       (data:ISignUpResponse) => {
         console.log(data);
       })
-      // this.user = {
-      //   firstname: '',
-      //   lastname: '',
-      //   email: '',
-      //   password: '',
-      //   address:{}
-      // }
-      this.router.navigate(['/account'])
+     Swal.fire('Success!', 'Your registration was successful.', 'success').then(
+          (result) => {
+            if (result) {
+              this.router.navigate(['/account']);
+            }
+          }
+        );
   }
 
 }

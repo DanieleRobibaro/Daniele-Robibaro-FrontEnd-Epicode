@@ -12,6 +12,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  isCollapsed = true;
 
   isUserLogged(){
     return this.authService.isUserLogged();

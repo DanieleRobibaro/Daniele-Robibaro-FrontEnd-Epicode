@@ -3,36 +3,19 @@ import { Injectable } from '@angular/core';
 import { User } from '../interface-class/user';
 import { AuthService } from './auth.service';
 
-
-
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UsersService {
+  constructor(private http: HttpClient, private authService: AuthService) {}
 
-  constructor(private http:HttpClient, private authService: AuthService) { }
-
-  apiUrl = 'http://localhost:4201/users'
-
-  // user = this.authService.getLoggedUser();
+  apiUrl = 'http://localhost:4201/users';
 
 
 
-  createAddress(){
-
+  updateAddress(id: number, user: User) {
+    return this.http.patch<User>(this.apiUrl + '/' + id, user);
   }
 
-  updateAddress(id:number,user:User){
-    return this.http.patch<User>(this.apiUrl+'/'+ id, user)
-  }
-
-  
-
-  deleteAddress(){
-
-  }
-
-
-
-
+ 
 }

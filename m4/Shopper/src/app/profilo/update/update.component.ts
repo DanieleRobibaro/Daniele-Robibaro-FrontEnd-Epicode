@@ -1,18 +1,56 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { User } from 'src/app/interface-class/user';
 import { AuthService } from 'src/app/service/auth.service';
+import { UsersService } from 'src/app/service/users.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-update',
   templateUrl: './update.component.html',
-  styleUrls: ['./update.component.scss']
+  styleUrls: ['./update.component.scss'],
 })
 export class UpdateComponent implements OnInit {
+  constructor(
+    private authService: AuthService,
+    private usersService: UsersService,
+    private router: Router
+  ) {}
 
-  constructor(private authService: AuthService) { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  onSubmit() {}
+
+  user = this.authService.getLoggedUser();
+
+  editUser() {
+    Swal.fire({
+      title: 'Are you sure?',
+      icon: 'question',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, edit it!',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        this.usersService
+          .updateAddress(this.user.id, this.user)
+          .subscribe((res) => {
+            console.log(res);
+            this.authService.saveLoggedUser(res)
+          });
+        Swal.fire('Edited!', 'Your file has been edited.', 'success').then(
+          (result) => {
+            if (result) {
+              this.router.navigate(['/account']);
+            }
+          }
+        );
+      }
+    });
   }
-
-  user:User = this.authService.getLoggedUser();
 }
+// this.usersService.updateAddress(this.user.id,this.user).subscribe((res)=>{
+//   console.log(res);
+// })
+// this.router.navigate(['/account'])

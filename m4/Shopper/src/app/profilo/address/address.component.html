@@ -4,101 +4,177 @@
     <div class="row">
       <div class="col-md-4 mx-auto">
         <div class="form">
-          <form class="needs-validation" novalidate method="post" name="register">
+          <form
+            #addressForm="ngForm"
+            class="form"
+            (ngSubmit)="addressForm.form.valid && onSubmit()"
+            novalidate
+          >
             <div class="form-group my-3">
-              <label for="validationCustom01" class="form-label">First Name</label>
+              <label>Firstname</label>
               <input
-                id="validationCustom01"
-                required
                 type="text"
                 name="firstname"
+                #firstname="ngModel"
                 class="form-control"
-                placeholder="Firstname"
                 [(ngModel)]="user.firstname"
+                placeholder="Firstname"
+                required
               />
             </div>
+            <span
+              class="text-danger"
+              *ngIf="(firstname.touched || addressForm.submitted) && firstname.errors?.['required']"
+            >
+              Firstname is required
+            </span>
             <div class="form-group my-3">
-              <label>Last Name</label>
+              <label>Lastname</label>
               <input
                 type="text"
                 name="lastname"
+                #lastname="ngModel"
                 class="form-control"
-                placeholder="Lastname"
                 [(ngModel)]="user.lastname"
+                placeholder="Lastname"
+                required
               />
             </div>
+            <span
+              class="text-danger"
+              *ngIf="(lastname.touched || addressForm.submitted) && lastname.errors?.['required']"
+            >
+              Lastname is required
+            </span>
             <div class="form-group my-3">
               <label>Email</label>
               <input
                 type="email"
                 name="email"
+                #email="ngModel"
                 class="form-control"
-                placeholder="Email"
                 [(ngModel)]="user.email"
+                placeholder="Email"
+                required
+                email
               />
             </div>
+            <span
+              class="text-danger"
+              *ngIf="(email.touched || addressForm.submitted) && email.errors?.['required']"
+            >
+              Email is required
+            </span>
+            <span
+              class="text-danger"
+              *ngIf="email.touched && email.errors?.['email']"
+            >
+              Enter a valid email address
+            </span>
             <div class="form-group my-3">
               <label>State</label>
               <input
-                required
                 type="text"
                 name="state"
+                #state="ngModel"
                 class="form-control"
-                placeholder="State"
                 [(ngModel)]="user.address.State"
+                placeholder="State"
+                required
               />
             </div>
+            <span
+              class="text-danger"
+              *ngIf="(state.touched || addressForm.submitted) && state.errors?.['required']"
+            >
+              State is required
+            </span>
             <div class="form-group my-3">
               <label>Country</label>
               <input
-                required
                 type="text"
                 name="country"
+                #country="ngModel"
                 class="form-control"
-                placeholder="Country"
                 [(ngModel)]="user.address.Country"
+                placeholder="Country"
+                required
               />
             </div>
+            <span
+              class="text-danger"
+              *ngIf="(country.touched || addressForm.submitted) && country.errors?.['required']"
+            >
+              Country is required
+            </span>
             <div class="form-group my-3">
               <label>City</label>
               <input
-                required
                 type="text"
-                name="City"
+                name="city"
+                #city="ngModel"
                 class="form-control"
-                placeholder="City"
                 [(ngModel)]="user.address.City"
+                placeholder="City"
+                required
               />
             </div>
+            <span
+              class="text-danger"
+              *ngIf="(city.touched || addressForm.submitted) && city.errors?.['required']"
+            >
+              City is required
+            </span>
             <div class="form-group my-3">
               <label>ZipCode</label>
               <input
-                required
-                type="number"
-                name="ZipCode"
+                type="text"
+                name="zipcode"
+                #zipcode="ngModel"
                 class="form-control"
-                placeholder="ZipCode"
                 [(ngModel)]="user.address.ZipCode"
+                placeholder="ZipCode"
+                required
               />
             </div>
+            <span
+              class="text-danger"
+              *ngIf="(zipcode.touched || addressForm.submitted) && zipcode.errors?.['required']"
+            >
+              ZipCode is required
+            </span>
             <div class="form-group my-3">
               <label>Street</label>
               <input
-                required
                 type="text"
-                name="Street"
+                name="street"
+                #street="ngModel"
                 class="form-control"
-                placeholder="Street"
                 [(ngModel)]="user.address.Street"
+                placeholder="Street"
+                required
               />
             </div>
+            <span
+              class="text-danger"
+              *ngIf="(street.touched || addressForm.submitted) && street.errors?.['required']"
+            >
+              Street is required
+            </span>
             <div class="text-center">
               <button
                 type="submit"
+                [disabled]="!addressForm.form.valid"
                 class="btn btn-primary send-button tx-tfm rounded-pill"
                 (click)="editUser()"
               >
                 Update
+              </button>
+              <button
+                class="btn btn-dark send-button tx-tfm rounded-pill"
+                [routerLink]="['/account']"
+              >
+                Back
               </button>
             </div>
           </form>
