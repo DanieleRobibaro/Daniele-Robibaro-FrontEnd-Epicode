@@ -7,7 +7,7 @@ const routes: Routes = [
     path: '', component: PagesComponent
   },
   {
-    path: 'shop', 
+    path: 'shop/all', 
     loadChildren: () => import('../shop/shop.module').then(m => m.ShopModule)
   },
   {

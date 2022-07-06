@@ -1,1 +1,158 @@
-<p class="my-5 py-5">shop works!</p>
+ <div *ngIf="isUserLogged() && user.id == 1" class="my-5 py-5">
+    <h1 class="text-center">ADD NEW PRODUCT</h1>
+    <div class="container my-5 py-5">
+      <div class="row">
+        <div class="col-md-4 mx-auto">
+          <div class="form">
+            <form
+              #shopForm="ngForm"
+              class="form"
+              (ngSubmit)="shopForm.form.valid && onSubmit(); shopForm.resetForm()"
+              novalidate
+            >
+              <div class="form-group my-3">
+                <label>Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  #name="ngModel"
+                  class="form-control"
+                  [(ngModel)]="product.name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <span
+                class="text-danger"
+                *ngIf="(name.touched || shopForm.submitted) && name.errors?.['required']"
+              >
+                Name is required
+              </span>
+              <div class="form-group my-3">
+                <label>Category</label>
+                <input
+                  type="text"
+                  name="category"
+                  #category="ngModel"
+                  class="form-control"
+                  [(ngModel)]="product.category"
+                  placeholder="Category"
+                  required
+                />
+              </div>
+              <span
+                class="text-danger"
+                *ngIf="(category.touched || shopForm.submitted) && category.errors?.['required']"
+              >
+                Category is required
+              </span>
+              <div class="form-group my-3">
+                <label>Slug</label>
+                <input
+                  type="text"
+                  name="slug"
+                  #slug="ngModel"
+                  class="form-control"
+                  [(ngModel)]="product.slug"
+                  placeholder="Slug"
+                  required
+                />
+              </div>
+              <span
+                class="text-danger"
+                *ngIf="(slug.touched || shopForm.submitted) && slug.errors?.['required']"
+              >
+                Slug is required
+              </span>
+              <div class="form-group my-3">
+                <label>Price</label>
+                <input
+                  type="text"
+                  name="price"
+                  #price="ngModel"
+                  class="form-control"
+                  [(ngModel)]="product.price"
+                  placeholder="Price"
+                  required
+                />
+              </div>
+              <span
+                class="text-danger"
+                *ngIf="(price.touched || shopForm.submitted) && price.errors?.['required']"
+              >
+                Price is required
+              </span>
+              <div class="form-check form-switch">
+                <input #availabilityForm class="form-check-input" type="checkbox" id="availabilityForm" checked (change)="getAvailability(availabilityForm.checked)">
+                <label class="form-check-label" for="availabilityForm">Availability</label>
+              </div>
+              <!-- <span
+                class="text-danger"
+                *ngIf="(availability.touched || shopForm.submitted) && availability.errors?.['required']"
+              >
+                Availability is required
+              </span> -->
+              <div class="form-group my-3">
+                <label>Description</label>
+                <input
+                  type="text"
+                  name="description"
+                  #description="ngModel"
+                  class="form-control"
+                  [(ngModel)]="product.description"
+                  placeholder="Description"
+                  required
+                />
+              </div>
+              <span
+                class="text-danger"
+                *ngIf="(description.touched || shopForm.submitted) && description.errors?.['required']"
+              >
+                Description is required
+              </span>
+              <div class="text-center">
+                <button
+                  type="submit"
+                  [disabled]="!shopForm.form.valid"
+                  class="btn btn-primary send-button tx-tfm rounded-pill"
+                  (click)="addNewProduct()"
+                >
+                  Add product
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="my-5 py-5 container">
+    <div class="py-5">
+        <h1 class="text-center">Our products</h1>
+    </div>
+    <div class="container-card">
+      <div *ngFor="let prod of products" class="card" style="width: 18rem;">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+        <div class="card-body">
+          <h5 class="card-title">{{prod.name}}</h5>
+          <p class="card-text">{{prod.description}}</p>
+          <a *ngIf="prod.availability == false" class="btn btn-primary disabled" aria-disabled="true">Out of order</a>
+          <a *ngIf="prod.availability == true" class="btn btn-primary">Shop now</a>
+          <p class="card-text">{{prod.price}}</p>
+          <button *ngIf="isUserLogged() && user.id == 1" class="btn btn-warning m-3">update</button>
+          <button *ngIf="isUserLogged() && user.id == 1" class="btn btn-danger m-3">delete</button>
+        </div>
+      </div>      
+    </div>
+  </div>
+  
+
+  <!-- <div class="card">
+    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+    <div class="card-body">
+        <h5 class="card-title">Name store</h5>
+        <p class="card-text">Address of store</p>
+        <p class="card-text">All products available instore and online <button class="btn btn-outline-info" [routerLink]="['/pages/shop']">Shop now</button></p>
+        <a href="https://www.google.it/maps/place/3510-621+Fail,+Portogallo/@40.6077445,-7.9783954,17.38z/data=!4m5!3m4!1s0xd2339f38cd20bad:0x8e69f6d7c8e2def2!8m2!3d40.6078641!4d-7.9770136" class="btn btn-outline-success" target="_blank">Show on map</a>
+    </div>
+</div>     -->

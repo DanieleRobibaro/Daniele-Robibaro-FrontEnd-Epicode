@@ -20,8 +20,8 @@ export class LogInComponent implements OnInit {
 
 
   user:ILogIn = {
-    email: '',
-    password: ''
+    email: 'admin@admin.it',
+    password: 'password'
     
   }
 

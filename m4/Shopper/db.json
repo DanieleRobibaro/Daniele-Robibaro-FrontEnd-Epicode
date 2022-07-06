@@ -2,20 +2,64 @@
   "users": [
     {
       "email": "admin@admin.it",
-      "password": "$2a$10$5SZnb5kePUAwj68SnLS4BOOyXyqkaxRC4s46r8NqTCvo/Wl26Ue/a",
+      "password": "$2a$10$X3Loez7hKVZGMO9Nxf87EeQXkJ2U7M64ap6pUgEJBbFffbEWx5t6a",
       "firstname": "Admin",
       "lastname": "Admin",
       "address": {
-        "State": "Italy",
-        "Country": "Rome",
-        "City": "Rome",
-        "ZipCode": "0000",
-        "Street": "via admin admin"
+        "State": "",
+        "Country": "",
+        "City": "",
+        "ZipCode": "",
+        "Street": ""
       },
       "id": 1
     }
   ],
-  "products":[
-    
+  "products": [
+    {
+      "name": "Arthur Barron",
+      "category": "Id accusantium est ",
+      "slug": "Necessitatibus dolor",
+      "price": "339",
+      "availability": false,
+      "description": "Enim placeat accusa",
+      "id": 1
+    },
+    {
+      "name": "Shad Klein",
+      "category": "Est exercitation omn",
+      "slug": "Qui ut ipsum quibus",
+      "price": "639",
+      "availability": true,
+      "description": "Rerum in iste ut qui",
+      "id": 2
+    },
+    {
+      "name": "Fitzgerald Fitzgerald",
+      "category": "Quia molestias omnis",
+      "slug": "Recusandae Non minu",
+      "price": "487",
+      "availability": false,
+      "description": "Reprehenderit recus",
+      "id": 3
+    },
+    {
+      "name": "Gavin Steele",
+      "category": "Et a error placeat ",
+      "slug": "Inventore asperiores",
+      "price": "24",
+      "availability": true,
+      "description": "Vitae fuga Ex ullam",
+      "id": 4
+    },
+    {
+      "name": "Isabelle Meadows",
+      "category": "Quasi quis at impedi",
+      "slug": "In voluptatem quia ",
+      "price": "162",
+      "availability": false,
+      "description": "Sunt debitis fugiat",
+      "id": 5
+    }
   ]
 }
