@@ -1,4 +1,14 @@
 .card{
     margin-top:10%;
     margin-bottom:10%;
+    .btn-primary {
+        color: white;
+        background-color: #fdc9ce;
+        border-color: #fdc9ce;
+        &:hover {
+          color: #fdc9ce;
+          background-color: white;
+          border-color: #fdc9ce;
+        }
+      }
 }

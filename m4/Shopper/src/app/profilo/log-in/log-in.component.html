@@ -1,83 +1,102 @@
-<div class="container my-5 py-5">
-  <div class="col-md-6 mx-auto text-center">
-    <div class="header-title">
-      <h1 class="wv-heading--title">Sign In</h1>
+<div class="d">
+  <div class="container my-5 py-5">
+    <div class="col-md-6 mx-auto text-center">
+      <div class="header-title">
+        <h1 class="wv-heading--title">Sign In</h1>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4 mx-auto">
-      <div class="form">
-        <form
-          #loginForm="ngForm"
-          class="form"
-          (ngSubmit)="loginForm.form.valid && onSubmit()"
-          novalidate
-        >
-          <div class="form-group my-3">
-            <input
-              type="email"
-              name="email"
-              #email="ngModel"
-              class="form-control"
-              [(ngModel)]="user.email"
-              placeholder="Email"
-              required
-              email
-            />
-          </div>
-          <span
-            class="text-danger"
-            *ngIf="(email.touched || loginForm.submitted) && email.errors?.['required']"
+    <div class="row">
+      <div class="col-md-4 mx-auto">
+        <div class="form">
+          <form
+            #loginForm="ngForm"
+            class="form"
+            (ngSubmit)="loginForm.form.valid && onSubmit()"
+            novalidate
           >
-            Email is required
-          </span>
-          <span
-            class="text-danger"
-            *ngIf="email.touched && email.errors?.['email']"
-          >
-            Enter a valid email address
-          </span>
-          <div class="form-group my-3">
-            <input
-              type="password"
-              name="password"
-              #password="ngModel"
-              class="form-control"
-              [(ngModel)]="user.password"
-              placeholder="Password"
-              required
-            />
-          </div>
-          <span
-            class="text-danger"
-            *ngIf="(password.touched || loginForm.submitted) && password.errors?.['required']"
-          >
-            Password is required
-          </span>
-          <div class="text-center">
-            <button
-              [disabled]="!loginForm.form.valid"
-              type="submit"
-              class="btn btn-primary send-button tx-tfm rounded-pill"
-              (click)="goLogin()"
-            >
-              Sign in
-            </button>
-          </div>
-          <div class="col-md-12">
-            <div class="login-or">
-              <hr class="hr-or" />
+            <div class="form-group my-3">
+              <input
+                type="email"
+                name="email"
+                #email="ngModel"
+                class="form-control"
+                [(ngModel)]="user.email"
+                placeholder="Email"
+                required
+                email
+              />
             </div>
-          </div>
-          <div class="text-center">
-            <button
-              [routerLink]="['/account/register']"
-              class="btn btn-outline-primary send-button tx-tfm rounded-pill"
+            <!-- <span
+              class="text-danger"
+              *ngIf="(email.touched || loginForm.submitted) && email.errors?.['required']"
             >
-              Create Your Free Account
-            </button>
-          </div>
-        </form>
+              Email is required
+            </span>
+            <span
+              class="text-danger"
+              *ngIf="email.touched && email.errors?.['email']"
+            >
+              Enter a valid email address
+            </span> -->
+            <div
+              class="alert alert-danger"
+              *ngIf="(email.touched || loginForm.submitted) && email.errors?.['required']"
+              role="alert"
+            >
+              Email is required
+            </div>
+            <div
+              class="alert alert-danger"
+              *ngIf="email.touched && email.errors?.['email']"
+              role="alert"
+            >
+              Enter a valid email address
+            </div>
+            <div class="form-group my-3">
+              <input
+                type="password"
+                name="password"
+                #password="ngModel"
+                class="form-control"
+                [(ngModel)]="user.password"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <!-- <span
+              class="text-danger"
+              *ngIf="(password.touched || loginForm.submitted) && password.errors?.['required']"
+            >
+              Password is required
+            </span> -->
+            <div class="alert alert-danger" *ngIf="(password.touched || loginForm.submitted) && password.errors?.['required']"role="alert">
+              Password is required
+            </div>
+            <div class="text-center">
+              <button
+                [disabled]="!loginForm.form.valid"
+                type="submit"
+                class="btn btn-primary send-button tx-tfm rounded-pill"
+                (click)="goLogin()"
+              >
+                Sign in
+              </button>
+            </div>
+            <div class="col-md-12">
+              <div class="login-or">
+                <hr class="hr-or" />
+              </div>
+            </div>
+            <div class="text-center">
+              <button
+                [routerLink]="['/account/register']"
+                class="btn btn-outline-primary send-button tx-tfm rounded-pill"
+              >
+                Create Your Free Account
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>

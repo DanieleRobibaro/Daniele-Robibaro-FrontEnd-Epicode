@@ -17,10 +17,17 @@ export class ShopComponent implements OnInit {
   ) {}
 
   products!: Product[];
+  loading:boolean = true;
 
   ngOnInit(): void {
     this.productService.getAll().subscribe((res:Product[]) => {
       this.products = res
+      console.log(this.products)
+      console.log(this.products.length)
+      if(this.products.length > 0){
+        this.loading = false;
+      }
+
     })
   }
 
@@ -46,7 +53,20 @@ export class ShopComponent implements OnInit {
     this.product.availability = value;
   }
 
-  deleteProduct(){
-    this.productService.delete(this.product)
+  deleteProduct(id:number | null){
+    this.productService.delete(id).subscribe((res) => {
+      console.log(res);
+    })
+  }
+  updateProduct(){
+    this.productService.update(this.product.id,this.product).subscribe((res) => {
+      console.log(res);
+    })
+  }
+  getOneProduct(id:number | null){
+    this.productService.getProduct(id).subscribe((res:any) => {
+      console.log((res));
+      this.product = res
+    })
   }
 }

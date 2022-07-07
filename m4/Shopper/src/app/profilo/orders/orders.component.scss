@@ -9,6 +9,13 @@
             margin-bottom:5%;
             position: relative;
             left: 30%;
+            .btn-dark{
+                &:hover {
+                    color: black;
+                    background-color: white;
+                    border-color: black;
+                  }
+            }
         }
     }
 }

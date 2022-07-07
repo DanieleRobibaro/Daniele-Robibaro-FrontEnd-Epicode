@@ -6,6 +6,13 @@
             padding: 2%;
             border: 2px black solid;
             width: 500px;
+            .btn-danger{
+                &:hover{
+                    color: red;
+                    background-color: white;
+                    border-color: red;
+                }
+            }
         }
         .conteiner-a{
             padding: 2%;

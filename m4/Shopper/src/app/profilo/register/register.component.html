@@ -24,12 +24,15 @@
             required
             />
           </div>
-          <span
+          <!-- <span
             class="text-danger"
             *ngIf="(firstname.touched || registerForm.submitted) && firstname.errors?.['required']"
           >
             Firstname is required
-          </span>
+          </span> -->
+          <div class="alert alert-danger" *ngIf="(firstname.touched || registerForm.submitted) && firstname.errors?.['required']" role="alert">
+            Firstname is required
+          </div>
           <div class="form-group my-3">
             <input
             type="text"
@@ -41,12 +44,15 @@
             required
             />
           </div>
-          <span
+          <!-- <span
             class="text-danger"
             *ngIf="(lastname.touched || registerForm.submitted) && lastname.errors?.['required']"
           >
             Lastname is required
-          </span>
+          </span> -->
+          <div class="alert alert-danger" *ngIf="(lastname.touched || registerForm.submitted) && lastname.errors?.['required']" role="alert">
+            Lastname is required
+          </div>
           <div class="form-group my-3">
             <input
             type="email"
@@ -59,18 +65,24 @@
             email
             />
           </div>
-          <span
+          <!-- <span
             class="text-danger"
             *ngIf="(email.touched || registerForm.submitted) && email.errors?.['required']"
           >
             Email is required
-          </span>
-          <span
+          </span> -->
+          <div class="alert alert-danger" *ngIf="(email.touched || registerForm.submitted) && email.errors?.['required']" role="alert">
+            Email is required
+          </div>
+          <!-- <span
             class="text-danger"
             *ngIf="email.touched && email.errors?.['email']"
           >
             Enter a valid email address
-          </span>
+          </span> -->
+          <div class="alert alert-danger" *ngIf="email.touched && email.errors?.['email']" role="alert">
+            Enter a valid email address
+          </div>
           <div class="form-group my-3">
             <input
             type="password"
@@ -82,12 +94,15 @@
             required
             />
           </div>
-          <span
+          <!-- <span
             class="text-danger"
             *ngIf="(password.touched || registerForm.submitted) && password.errors?.['required']"
           >
             Password is required
-          </span>
+          </span> -->
+          <div class="alert alert-danger" *ngIf="(password.touched || registerForm.submitted) && password.errors?.['required']"role="alert">
+            Password is required
+          </div>
           <div class="text-center">
             <button
             type="submit"

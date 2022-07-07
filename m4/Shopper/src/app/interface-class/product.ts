@@ -5,4 +5,5 @@ export interface Product {
     price: number | string;
     availability: boolean;
     description: string;
+    id:number | null
 }

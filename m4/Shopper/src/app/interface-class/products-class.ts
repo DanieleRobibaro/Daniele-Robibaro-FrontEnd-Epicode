@@ -7,6 +7,7 @@ export class ProductsClass implements Product{
     price: number | string;
     availability: boolean;
     description: string;
+    id!:number | null
 
     constructor(){
         this.name = "";
@@ -15,5 +16,6 @@ export class ProductsClass implements Product{
         this.price = '';
         this.availability = true;
         this.description = "";
+        
     }
 }

@@ -20,8 +20,13 @@ export class ProductsService {
   getAll(){
     return this.http.get<Product[]>(this.apiUrlProducts)
   }
-  
-  delete(id: any): Observable<any> {
+  getProduct(id: number | null){
+    return this.http.get(this.apiUrlProducts + '/' + id);
+  }
+  update(id: number | null, products:Product) {
+    return this.http.put(this.apiUrlProducts + '/' + id, products);
+  }
+  delete(id: number | null) {
     return this.http.delete(this.apiUrlProducts + '/' + id);
   }
 

@@ -1,0 +1,33 @@
+.container {
+    border-radius: 30px;
+    background-color: white;
+    width: 45rem;
+    .btn-primary {
+      color: white;
+      background-color: #fdc9ce;
+      border-color: #fdc9ce;
+      &:hover {
+        color: #fdc9ce;
+        background-color: white;
+        border-color: #fdc9ce;
+      }
+    }
+    .btn-outline-primary {
+      color: #fdc9ce;
+      background-color: white;
+      border-color: #fdc9ce;
+      &:hover {
+        color: white;
+        background-color: #fdc9ce;
+        border-color: #fdc9ce;
+      }
+    }
+    .btn-dark{
+        &:hover {
+            color: black;
+            background-color: white;
+            border-color: black;
+          }
+    }
+  }
+  

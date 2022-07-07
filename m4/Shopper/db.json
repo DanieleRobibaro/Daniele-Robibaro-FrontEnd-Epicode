@@ -26,24 +26,6 @@
       "id": 1
     },
     {
-      "name": "Shad Klein",
-      "category": "Est exercitation omn",
-      "slug": "Qui ut ipsum quibus",
-      "price": "639",
-      "availability": true,
-      "description": "Rerum in iste ut qui",
-      "id": 2
-    },
-    {
-      "name": "Fitzgerald Fitzgerald",
-      "category": "Quia molestias omnis",
-      "slug": "Recusandae Non minu",
-      "price": "487",
-      "availability": false,
-      "description": "Reprehenderit recus",
-      "id": 3
-    },
-    {
       "name": "Gavin Steele",
       "category": "Et a error placeat ",
       "slug": "Inventore asperiores",
@@ -60,6 +42,33 @@
       "availability": false,
       "description": "Sunt debitis fugiat",
       "id": 5
+    },
+    {
+      "name": "Tashya Mccoy",
+      "category": "Magni rerum sed dele",
+      "slug": "Esse quasi quidem m",
+      "price": "946",
+      "availability": false,
+      "description": "Possimus enim dolor",
+      "id": 6
+    },
+    {
+      "name": "Tamara James",
+      "category": "Dolorem dolor accusa",
+      "slug": "Aut anim in harum au",
+      "price": "947",
+      "availability": true,
+      "description": "Modi quas nihil in p",
+      "id": 7
+    },
+    {
+      "name": "Sarah Guy",
+      "category": "Fugiat proident et",
+      "slug": "Nulla est ut ex moll",
+      "price": "833",
+      "availability": true,
+      "description": "Error iure unde magn",
+      "id": 8
     }
   ]
 }
