@@ -1,13 +1,43 @@
-.card{
-    max-width:20rem;
-    margin: 4%;
-   
+.container{
+  margin-left:10%;
+  margin-right:10%;
 }
-.container-card{
+.card {
+  max-width: 20rem;
+  margin: 4%;
+  border-radius: 20px;
+  svg {
+    border-radius: 20px;
+  }
+  .card-body {
     display: flex;
-    flex-wrap: wrap;
-
+    flex-direction: column;
+    .card-tess {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 20px;
+    }
+    .btn-primary {
+      color: white;
+      background-color: #fdc9ce;
+      border-color: #fdc9ce;
+      font-weight: bold;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+      &:hover {
+        color: #fdc9ce;
+        background-color: white;
+        border-color: #fdc9ce;
+        box-shadow: 0px 5px 10px#fdc9ce;
+        transform: translateY(-3px);
+      }
+    }
+  }
 }
-.spinner-border{
-    color:#748DA6;
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+.spinner-border {
+  color: #748da6;
 }

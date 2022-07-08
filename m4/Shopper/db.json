@@ -6,11 +6,11 @@
       "firstname": "Admin",
       "lastname": "Admin",
       "address": {
-        "State": "",
-        "Country": "",
-        "City": "",
-        "ZipCode": "",
-        "Street": ""
+        "State": "Rome",
+        "Country": "Rome",
+        "City": "Rome",
+        "ZipCode": "0000",
+        "Street": "via admin admin"
       },
       "id": 1
     }

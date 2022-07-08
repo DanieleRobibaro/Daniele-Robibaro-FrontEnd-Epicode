@@ -1,21 +1,27 @@
-.card{
-    margin-top:10%;
-    margin-bottom:10%;
-    .card-body{
-        margin-top:5%;
-        
-        .center{
-            margin-top:5%;
-            margin-bottom:5%;
-            position: relative;
-            left: 30%;
-            .btn-dark{
-                &:hover {
-                    color: black;
-                    background-color: white;
-                    border-color: black;
-                  }
-            }
+.card {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  .card-body {
+    margin-top: 5%;
+
+    .center {
+      margin-top: 5%;
+      margin-bottom: 5%;
+      position: relative;
+      left: 30%;
+      .btn-dark {
+        background-color: #082032;
+        border-color: #082032;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        &:hover {
+          color: #082032;
+          background-color: white;
+          border-color: #082032;
+          box-shadow: 0px 5px 10px #082032;
+          transform: translateY(-3px);
         }
+      }
     }
+  }
 }

@@ -54,7 +54,7 @@
         <p>{{user.address.Street}}</p>
         <p>{{user.address.City}} {{user.address.ZipCode}}</p>
         <p>{{user.address.Country}}</p>
-        <a class="link-info" [routerLink]="['/account/address']">View your address</a>
+        <a class="btn btn-info rounded-pill" [routerLink]="['/account/address']">VIEW YOUR ADDRESS</a>
       </div>
       <div *ngIf="user.address.City == '' " class="conteiner-a">
         <h5 class="card-title">ADDRESS</h5>

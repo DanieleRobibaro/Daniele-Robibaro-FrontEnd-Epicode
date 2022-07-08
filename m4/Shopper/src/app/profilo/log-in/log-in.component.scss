@@ -6,20 +6,29 @@
     color: white;
     background-color: #fdc9ce;
     border-color: #fdc9ce;
+    font-weight: bold;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
     &:hover {
       color: #fdc9ce;
       background-color: white;
       border-color: #fdc9ce;
+      box-shadow: 0px 5px 10px#fdc9ce;
+      transform: translateY(-3px);
     }
   }
   .btn-outline-primary {
     color: #fdc9ce;
     background-color: white;
     border-color: #fdc9ce;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
     &:hover {
       color: white;
       background-color: #fdc9ce;
       border-color: #fdc9ce;
+      box-shadow: 0px 5px 10px lightslategrey;
+      transform: translateY(-3px);
     }
   }
 }

@@ -189,22 +189,24 @@
         focusable="false"
       >
         <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#868e96"></rect>
-        <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+        <rect width="100%" height="100%" fill="#F0EBE3"></rect>
+        <text x="50%" y="50%" fill="#2C3639" dy=".3em">Image cap</text>
       </svg>
       <div class="card-body">
-        <h5 class="card-title">{{ prod.name }}</h5>
-        <p class="card-text">{{ prod.description }}</p>
+        <div class="card-tess">
+          <h5 class="card-title">{{ prod.name }}</h5>
+          <!-- <p class="card-text">{{ prod.description }}</p> -->
+          <p class="card-text">{{ prod.price }}</p>
+        </div>
         <a
           *ngIf="prod.availability == false"
-          class="btn btn-primary disabled"
+          class="btn btn-primary disabled rounded-pill"
           aria-disabled="true"
           >Out of order</a
         >
-        <a *ngIf="prod.availability == true" class="btn btn-primary"
-          >Shop now</a
+        <a *ngIf="prod.availability == true" class="btn btn-primary rounded-pill"
+          >ADD</a
         >
-        <p class="card-text">{{ prod.price }}</p>
         <button
           *ngIf="isUserLogged() && user.id == 1"
           class="btn btn-warning m-3"
