@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { AuthService } from 'src/app/service/auth.service';
+import { ModalCartComponent } from '../modal-cart/modal-cart.component';
+
+
 
 @Component({
   selector: 'app-navbar',
@@ -7,8 +11,9 @@ import { AuthService } from 'src/app/service/auth.service';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  modalRef:NgbActiveModal | null = null;
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService, private modalService: NgbModal) { }
 
   ngOnInit(): void {
   }
@@ -17,4 +22,9 @@ export class NavbarComponent implements OnInit {
   isUserLogged(){
     return this.authService.isUserLogged();
   }
+  open(){
+    this.modalRef = this.modalService.open(ModalCartComponent);
+  }
 }
+
+

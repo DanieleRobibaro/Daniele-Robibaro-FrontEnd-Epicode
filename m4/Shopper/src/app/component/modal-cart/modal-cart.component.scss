@@ -1,0 +1,23 @@
+.modal-header{
+    background-color: #F2D7D9;
+}
+.btn-info {
+    color: white;
+    background-color: #fdc9ce;
+    border-color: #fdc9ce;
+    &:hover {
+      color: #fdc9ce;
+      background-color: white;
+      border-color: #fdc9ce;
+    }
+  }
+  .btn-outline-info {
+    color: white;
+    background-color: #fdc9ce;
+    border-color: #fdc9ce;
+    &:hover {
+      color: #fdc9ce;
+      background-color: white;
+      border-color: #fdc9ce;
+    }
+  }

@@ -9,12 +9,15 @@ import { FooterComponent } from './component/footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { InterceptorInterceptor } from './auth/interceptor.interceptor';
+import { ModalCartComponent } from './component/modal-cart/modal-cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ModalCartComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,8 @@ import { InterceptorInterceptor } from './auth/interceptor.interceptor';
     NgbModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
   ],
   providers: [
     {
