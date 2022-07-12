@@ -69,7 +69,11 @@
             >
               Password is required
             </span> -->
-            <div class="alert alert-danger" *ngIf="(password.touched || loginForm.submitted) && password.errors?.['required']"role="alert">
+            <div
+              class="alert alert-danger"
+              *ngIf="(password.touched || loginForm.submitted) && password.errors?.['required']"
+              role="alert"
+            >
               Password is required
             </div>
             <div class="text-center">

@@ -4,7 +4,6 @@ import { Router } from '@angular/router';
 import { ILogIn, ISignUp, ISignUpResponse } from '../interface-class/iauthdata';
 import { User } from '../interface-class/user';
 
-
 @Injectable({
   providedIn: 'root',
 })
@@ -38,7 +37,7 @@ export class AuthService {
   isUserLogged(): boolean {
     return localStorage.getItem(this.tokenItemKey) != null;
   }
-  
+
   saveLoggedUser(user: User) {
     localStorage.setItem(this.userInfoKey, JSON.stringify(user));
   }

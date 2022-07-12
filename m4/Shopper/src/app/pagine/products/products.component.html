@@ -1,34 +1,40 @@
 <!-- <p *ngIf="!loading">{{product | json}}</p> -->
-<div class="container d-flex flex-md-row justify-content-md-center flex-column my-5" *ngIf="!loading">
-        <div class="py-2 section-img">
-            <div class="immage">
-                <img src="https://i.picsum.photos/id/1060/5598/3732.jpg?hmac=31kU0jp5ejnPTdEt-8tAXU5sE-buU-y1W1qk_BsiUC8">
-            </div>
-        </div>
-        <div class="py-2 section-text">
-            <div class="product-info d">
-                <div class="title my-4">
-                    <h1>{{product.name}}</h1>
-                </div>
-                <div class="category my-4">
-                    {{product.category}}
-                </div>
-                <div class="description my-4">
-                    {{product.description}}
-                </div>
-                <div class="price my-4">
-                    {{product.price | currency: "EUR" : "symbol"}}
-                </div>
-                <div cluss="shop my-4" *ngIf="product.availability == true">
-                    <button class="btn btn-primary rounded-pill">Add to cart</button>
-                </div>
-                <div cluss="shop my-4" *ngIf="product.availability != true">
-                    <button class="btn btn-primary rounded-pill disabled">Out of order</button>
-                </div>
-
-            </div>
-        </div>
+<div
+  class="container d-flex flex-md-row justify-content-md-center flex-column my-5"
+  *ngIf="!loading"
+>
+  <div class="py-2 section-img">
+    <div class="immage">
+      <img
+        src="https://i.picsum.photos/id/1060/5598/3732.jpg?hmac=31kU0jp5ejnPTdEt-8tAXU5sE-buU-y1W1qk_BsiUC8"
+      />
+    </div>
+  </div>
+  <div class="py-2 section-text">
+    <div class="product-info d">
+      <div class="title my-4">
+        <h1>{{ product.name }}</h1>
+      </div>
+      <div class="category my-4">
+        {{ product.category }}
+      </div>
+      <div class="description my-4">
+        {{ product.description }}
+      </div>
+      <div class="price my-4">
+        {{ product.price | currency: "EUR":"symbol" }}
+      </div>
+      <div cluss="shop my-4" *ngIf="product.availability == true">
+        <button class="btn btn-primary rounded-pill">Add to cart</button>
+      </div>
+      <div cluss="shop my-4" *ngIf="product.availability != true">
+        <button class="btn btn-primary rounded-pill disabled">
+          Out of order
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 <div *ngIf="loading" class="d-flex justify-content-center m-5 p-5">
-    <div class="spinner-border" role="status"></div>
-  </div>
+  <div class="spinner-border" role="status"></div>
+</div>

@@ -6,34 +6,28 @@ import Swal from 'sweetalert2';
 @Component({
   selector: 'app-log-in',
   templateUrl: './log-in.component.html',
-  styleUrls: ['./log-in.component.scss']
+  styleUrls: ['./log-in.component.scss'],
 })
 export class LogInComponent implements OnInit {
+  constructor(private authService: AuthService) {}
 
-  constructor(private authService: AuthService) { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-  }
-  
-  onSubmit(){
-  }
+  onSubmit() {}
 
-
-  user:ILogIn = {
+  user: ILogIn = {
     email: 'admin@admin.it',
-    password: 'password'
-    
-  }
+    password: 'password',
+  };
 
-  goLogin(){
-    this.authService.login(this.user)
-    .subscribe(
-      (res:ISignUpResponse) => {
+  goLogin() {
+    this.authService.login(this.user).subscribe(
+      (res: ISignUpResponse) => {
         console.log(res);
         this.authService.logUser(res.accessToken);
         this.authService.saveLoggedUser(res.user);
-        
-        if(res){
+
+        if (res) {
           const Toast = Swal.mixin({
             toast: true,
             position: 'top-end',
@@ -41,21 +35,22 @@ export class LogInComponent implements OnInit {
             timer: 2000,
             timerProgressBar: true,
             didOpen: (toast) => {
-              toast.addEventListener('mouseenter', Swal.stopTimer)
-              toast.addEventListener('mouseleave', Swal.resumeTimer)
-            }
-          })
-          
+              toast.addEventListener('mouseenter', Swal.stopTimer);
+              toast.addEventListener('mouseleave', Swal.resumeTimer);
+            },
+          });
+
           Toast.fire({
             icon: 'success',
-            title: 'Logged in successfully'
-          })
+            title: 'Logged in successfully',
+          });
         }
       },
-      error => Swal.fire({
-        icon: 'error',
-        title: 'Username or password incorrect'
-      })
-    )
+      (error) =>
+        Swal.fire({
+          icon: 'error',
+          title: 'Username or password incorrect',
+        })
+    );
   }
 }

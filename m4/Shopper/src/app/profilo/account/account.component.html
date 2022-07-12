@@ -21,51 +21,62 @@
       <button class="btn btn-danger"(click)="logout()">Logout</button>
     </div>
   </div> -->
-  <div class="card">
-    <div class="card-header">
-      <ul class="nav nav-tabs card-header-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="true" [routerLink]="['/account']">Profile</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/account/update']">Update</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/account/orders']">Orders</a>
-        </li>
-      </ul>
+<div class="card">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          aria-current="true"
+          [routerLink]="['/account']"
+          >Profile</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/account/update']">Update</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/account/orders']">Orders</a>
+      </li>
+    </ul>
+  </div>
+  <div
+    class="card-body d-flex flex-md-row justify-content-md-around flex-column"
+  >
+    <div class="conteiner-g">
+      <h5 class="card-title">GENERAL</h5>
+      <div>
+        <label>Name</label>
+        <p>{{ user.firstname }}</p>
+      </div>
+      <div>
+        <label>Email</label>
+        <p>{{ user.email }}</p>
+      </div>
+      <button class="btn btn-danger rounded-pill" (click)="logout()">
+        Logout
+      </button>
     </div>
-    <div class="card-body d-flex flex-md-row justify-content-md-around flex-column">
-      <div class="conteiner-g">
-        <h5 class="card-title">GENERAL</h5>
-        <div>
-          <label>Name</label>
-          <p>{{user.firstname}}</p>
-        </div>
-        <div>
-          <label>Email</label>
-          <p>{{user.email}}</p>
-        </div>
-        <button class="btn btn-danger rounded-pill"(click)="logout()">Logout</button>
-      </div>
-      <div *ngIf="user.address.City != '' " class="conteiner-a">
-        <h5 class="card-title">ADDRESS</h5>
-        <p>{{user.firstname}} {{user.lastname}}</p>
-        <p>{{user.address.Street}}</p>
-        <p>{{user.address.City}} {{user.address.ZipCode}}</p>
-        <p>{{user.address.Country}}</p>
-        <a class="btn btn-info rounded-pill" [routerLink]="['/account/address']">VIEW YOUR ADDRESS</a>
-      </div>
-      <div *ngIf="user.address.City == '' " class="conteiner-a">
-        <h5 class="card-title">ADDRESS</h5>
-        <a [routerLink]="['/account/address']">
-          <span class="span-first">
-            <span class="span-second">
-              <span class="plus">+</span>
-              <h4>NEW ADDRESS</h4>
-            </span>
+    <div *ngIf="user.address.City != ''" class="conteiner-a">
+      <h5 class="card-title">ADDRESS</h5>
+      <p>{{ user.firstname }} {{ user.lastname }}</p>
+      <p>{{ user.address.Street }}</p>
+      <p>{{ user.address.City }} {{ user.address.ZipCode }}</p>
+      <p>{{ user.address.Country }}</p>
+      <a class="btn btn-info rounded-pill" [routerLink]="['/account/address']"
+        >VIEW YOUR ADDRESS</a
+      >
+    </div>
+    <div *ngIf="user.address.City == ''" class="conteiner-a">
+      <h5 class="card-title">ADDRESS</h5>
+      <a [routerLink]="['/account/address']">
+        <span class="span-first">
+          <span class="span-second">
+            <span class="plus">+</span>
+            <h4>NEW ADDRESS</h4>
           </span>
-        </a>
-      </div>
+        </span>
+      </a>
     </div>
   </div>
+</div>

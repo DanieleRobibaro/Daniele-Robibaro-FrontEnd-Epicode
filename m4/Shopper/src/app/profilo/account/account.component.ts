@@ -38,6 +38,4 @@ export class AccountComponent implements OnInit {
       title: 'You have been logged out',
     });
   }
-
-  
 }
