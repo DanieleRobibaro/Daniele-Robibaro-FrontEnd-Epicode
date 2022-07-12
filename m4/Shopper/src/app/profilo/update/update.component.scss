@@ -1,6 +1,27 @@
 .card{
-    margin-top:10%;
+    margin-top:5%;
     margin-bottom:10%;
+    border-color: #D3CEDF;
+    background-color: #D3CEDF;
+    .card-header {
+      background-color: #F2D7D9;
+      .nav-link{
+        color: black;
+      }
+      .active{
+        background-color: #D3CEDF;
+        border-color: #D3CEDF;
+      }
+    }
+    .card-body{
+      margin-top:5%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 500px;
+      border: 1px #748da6 solid;
+      background-color: white;
+      border-radius: 20px;
+    }
     .btn-primary {
       color: white;
       background-color: #fdc9ce;

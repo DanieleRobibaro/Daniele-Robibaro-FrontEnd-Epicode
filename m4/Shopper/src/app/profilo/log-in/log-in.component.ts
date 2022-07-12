@@ -26,28 +26,36 @@ export class LogInComponent implements OnInit {
   }
 
   goLogin(){
-    this.authService.login(this.user).subscribe(
+    this.authService.login(this.user)
+    .subscribe(
       (res:ISignUpResponse) => {
         console.log(res);
         this.authService.logUser(res.accessToken);
-        this.authService.saveLoggedUser(res.user)
-      }
+        this.authService.saveLoggedUser(res.user);
+        
+        if(res){
+          const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 2000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+          })
+          
+          Toast.fire({
+            icon: 'success',
+            title: 'Logged in successfully'
+          })
+        }
+      },
+      error => Swal.fire({
+        icon: 'error',
+        title: 'Username or password incorrect'
+      })
     )
-    const Toast = Swal.mixin({
-      toast: true,
-      position: 'top-end',
-      showConfirmButton: false,
-      timer: 3000,
-      timerProgressBar: true,
-      didOpen: (toast) => {
-        toast.addEventListener('mouseenter', Swal.stopTimer)
-        toast.addEventListener('mouseleave', Swal.resumeTimer)
-      }
-    })
-    
-    Toast.fire({
-      icon: 'success',
-      title: 'Logged in successfully'
-    })
   }
 }

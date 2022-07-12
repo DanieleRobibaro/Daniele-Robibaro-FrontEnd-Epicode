@@ -17,58 +17,58 @@
   ],
   "products": [
     {
-      "name": "Arthur Barron",
-      "category": "Id accusantium est ",
-      "slug": "Necessitatibus dolor",
-      "price": "339",
-      "availability": false,
-      "description": "Enim placeat accusa",
+      "name": "Cora Hayes",
+      "category": "Doloremque ut sed ex",
+      "slug": "cora-hayes",
+      "price": "347",
+      "availability": true,
+      "description": "Et quisquam esse vol",
       "id": 1
     },
     {
-      "name": "Gavin Steele",
-      "category": "Et a error placeat ",
-      "slug": "Inventore asperiores",
-      "price": "24",
+      "name": "Leo Underwood",
+      "category": "Velit cupidatat volu",
+      "slug": "leo-underwood",
+      "price": "558",
+      "availability": false,
+      "description": "Reprehenderit saepe",
+      "id": 2
+    },
+    {
+      "name": "Madeline Vargas",
+      "category": "Aliquam accusamus au",
+      "slug": "madeline-vargas",
+      "price": "972",
       "availability": true,
-      "description": "Vitae fuga Ex ullam",
+      "description": "Quam quisquam recusa",
+      "id": 3
+    },
+    {
+      "name": "Indigo Hartman",
+      "category": "Dolore consequatur c",
+      "slug": "indigo-hartman",
+      "price": "472",
+      "availability": true,
+      "description": "Non optio dicta ull",
       "id": 4
     },
     {
-      "name": "Isabelle Meadows",
-      "category": "Quasi quis at impedi",
-      "slug": "In voluptatem quia ",
-      "price": "162",
+      "name": "Kathleen Reynolds",
+      "category": "Sunt autem nisi occa",
+      "slug": "kathleen-reynolds",
+      "price": "9",
       "availability": false,
-      "description": "Sunt debitis fugiat",
+      "description": "Aut nulla eum aut es",
       "id": 5
     },
     {
-      "name": "Tashya Mccoy",
-      "category": "Magni rerum sed dele",
-      "slug": "Esse quasi quidem m",
-      "price": "946",
-      "availability": false,
-      "description": "Possimus enim dolor",
+      "name": "Chancellor Fletcher",
+      "category": "Dolores veniam aute",
+      "slug": "chancellor-fletcher",
+      "price": "425",
+      "availability": true,
+      "description": "Reprehenderit corpor",
       "id": 6
-    },
-    {
-      "name": "Tamara James",
-      "category": "Dolorem dolor accusa",
-      "slug": "Aut anim in harum au",
-      "price": "947",
-      "availability": true,
-      "description": "Modi quas nihil in p",
-      "id": 7
-    },
-    {
-      "name": "Sarah Guy",
-      "category": "Fugiat proident et",
-      "slug": "Nulla est ut ex moll",
-      "price": "833",
-      "availability": true,
-      "description": "Error iure unde magn",
-      "id": 8
     }
   ]
 }

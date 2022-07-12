@@ -29,6 +29,9 @@ export class ProductsService {
   delete(id: number | null) {
     return this.http.delete(this.apiUrlProducts + '/' + id);
   }
+  getProductBySlug(slug: string){
+    return this.http.get<Product[]>(this.apiUrlProducts + '?slug=' + slug)
+  }
 
 
 }

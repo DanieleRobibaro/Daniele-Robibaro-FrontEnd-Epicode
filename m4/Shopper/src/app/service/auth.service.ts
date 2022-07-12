@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { ILogIn, ISignUp, ISignUpResponse } from '../interface-class/iauthdata';
 import { User } from '../interface-class/user';
 
+
 @Injectable({
   providedIn: 'root',
 })

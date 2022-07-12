@@ -60,7 +60,7 @@
             >
               Category is required
             </div>
-            <div class="form-group my-3">
+            <!-- <div class="form-group my-3">
               <label>Slug</label>
               <input
                 type="text"
@@ -72,19 +72,19 @@
                 required
               />
             </div>
-            <!-- <span
+             <span
               class="text-danger"
               *ngIf="(slug.touched || shopForm.submitted) && slug.errors?.['required']"
             >
               Slug is required
             </span> -->
-            <div
+            <!-- <div
               class="alert alert-danger"
               *ngIf="(slug.touched || shopForm.submitted) && slug.errors?.['required']"
               role="alert"
             >
               Slug is required
-            </div>
+            </div> -->
             <div class="form-group my-3">
               <label>Price</label>
               <input
@@ -152,7 +152,7 @@
               <button
                 type="submit"
                 [disabled]="!shopForm.form.valid"
-                class="btn btn-primary send-button tx-tfm rounded-pill"
+                class="btn btn-info send-button tx-tfm rounded-pill"
                 (click)="addNewProduct()"
               >
                 Add product
@@ -174,29 +174,18 @@
 </div>
 <div class="container">
   <div class="py-5" *ngIf="!loading">
-    <h1 class="text-center">OUR PRODUCTS</h1>
+    <h1>OUR PRODUCTS</h1>
   </div>
   <div class="container-card">
-    <div *ngFor="let prod of products" class="card" style="width: 18rem">
-      <svg
-        class="bd-placeholder-img card-img-top"
-        width="100%"
-        height="180"
-        xmlns="http://www.w3.org/2000/svg"
-        role="img"
-        aria-label="Placeholder: Image cap"
-        preserveAspectRatio="xMidYMid slice"
-        focusable="false"
-      >
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#F0EBE3"></rect>
-        <text x="50%" y="50%" fill="#2C3639" dy=".3em">Image cap</text>
-      </svg>
+    <div *ngFor="let prod of products" class="card" >
+      <a class="sito" [routerLink]="['/products',prod.slug]">
+        <img src="https://i.picsum.photos/id/1060/5598/3732.jpg?hmac=31kU0jp5ejnPTdEt-8tAXU5sE-buU-y1W1qk_BsiUC8">
+      </a>
       <div class="card-body">
         <div class="card-tess">
           <h5 class="card-title">{{ prod.name }}</h5>
           <!-- <p class="card-text">{{ prod.description }}</p> -->
-          <p class="card-text">{{ prod.price }}</p>
+          <p class="card-text">{{ prod.price | currency: "EUR" : "symbol"}}</p>
         </div>
         <a
           *ngIf="prod.availability == false"
@@ -209,15 +198,21 @@
         >
         <button
           *ngIf="isUserLogged() && user.id == 1"
-          class="btn btn-warning m-3"
+          class="btn btn-warning rounded-pill m-3"
           (click)="getOneProduct(prod.id)"
         >
           <!-- (click)="updateProduct(prod.id,prod)" -->
           update
         </button>
+        <!-- <a
+          class="btn btn-warning rounded-pill m-3"
+          [routerLink]="['/products',prod.slug]"
+        >
+          deteils
+        </a> -->
         <button
           *ngIf="isUserLogged() && user.id == 1"
-          class="btn btn-danger m-3"
+          class="btn btn-danger rounded-pill m-3"
           (click)="deleteProduct(prod.id)"
         >
           delete

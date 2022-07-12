@@ -1,13 +1,56 @@
 .container{
   margin-left:10%;
   margin-right:10%;
+  .form-check-input{
+    &:checked{
+      background-color:#4CACBC;
+      border-color:#4CACBC;
+    }
+  }
+  .btn-info{
+    color: white;
+      background-color: #4CACBC;
+      border-color: #4CACBC;
+      font-weight: bold;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+      &:hover {
+        color: #4CACBC;
+        background-color: white;
+        border-color: #4CACBC;
+        box-shadow: 0px 5px 10px#4CACBC;
+        transform: translateY(-3px);
+      }
+  }
+  .btn-success{
+    color: white;
+      background-color: #76BA99;
+      border-color: #76BA99;
+      font-weight: bold;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+      &:hover {
+        color: #76BA99;
+        background-color: white;
+        border-color: #76BA99;
+        box-shadow: 0px 5px 10px#76BA99;
+        transform: translateY(-3px);
+      }
+  }
 }
 .card {
-  max-width: 20rem;
+  width: 18rem;
   margin: 4%;
   border-radius: 20px;
-  svg {
+  img {
+    max-width:286px;
+    max-height:191px;
     border-radius: 20px;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.4);
+    &:hover {
+      box-shadow: 0px 5px 10px#fdc9ce;
+        transform: translateY(-2px);
+    }
   }
   .card-body {
     display: flex;
@@ -29,6 +72,36 @@
         background-color: white;
         border-color: #fdc9ce;
         box-shadow: 0px 5px 10px#fdc9ce;
+        transform: translateY(-3px);
+      }
+    }
+    .btn-danger{
+      color: white;
+      background-color: #F87474;
+      border-color: #F87474;
+      font-weight: bold;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+      &:hover {
+        color: #F87474;
+        background-color: white;
+        border-color: #F87474;
+        box-shadow: 0px 5px 10px#F87474;
+        transform: translateY(-3px);
+      }
+    }
+    .btn-warning{
+      color: white;
+      background-color: #F4E06D;
+      border-color: #F4E06D;
+      font-weight: bold;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+      &:hover {
+        color: #F4E06D;
+        background-color: white;
+        border-color: #F4E06D;
+        box-shadow: 0px 5px 10px#F4E06D;
         transform: translateY(-3px);
       }
     }

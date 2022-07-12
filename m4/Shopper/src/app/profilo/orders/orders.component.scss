@@ -1,9 +1,20 @@
 .card {
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 10%;
+  border-color: #D3CEDF;
+  .card-header {
+    background-color: #F2D7D9;
+    .nav-link{
+      color: black;
+    }
+    .active{
+      background-color: #D3CEDF;
+      border-color: #D3CEDF;
+    }
+  }
   .card-body {
-    margin-top: 5%;
-
+    padding-top: 7%;
+    background-color: #D3CEDF;
     .center {
       margin-top: 5%;
       margin-bottom: 5%;

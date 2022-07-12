@@ -44,6 +44,8 @@ export class ShopComponent implements OnInit {
 
   
   addNewProduct() {
+    let name = this.product.name;
+    this.product.slug = name.replace(/ /g,'-').toLowerCase()
     this.productService.addProducts(this.product).subscribe((res) => {
       console.log(res);
     });
