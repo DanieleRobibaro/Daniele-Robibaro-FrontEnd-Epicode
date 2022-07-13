@@ -1,6 +1,9 @@
 .modal-header{
     background-color: #748DA6;
 }
+.modal-dialog {
+  max-width:700px;
+}
 .btn-info {
   color: white;
   background-color: #748DA6;
@@ -28,5 +31,39 @@
     border-color: #748DA6;
     box-shadow: 0px 5px 10px lightslategrey;
     transform: translateY(-3px);
+  }
+}
+.not-empty{
+  display: flex;
+  flex-wrap: wrap;
+  
+  .card{
+    background-color:#D3CEDF;
+    width: 12rem;
+    margin: 2% 4%;
+    border-radius:10px;
+    img{
+      border-radius:10px 10px 0px 0px;
+    }
+    .card-body{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .btn-danger{
+        color: white;
+        background-color: #F87474;
+        border-color: #F87474;
+        font-weight: bold;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        &:hover {
+          color: #F87474;
+          background-color: white;
+          border-color: #F87474;
+          box-shadow: 0px 5px 10px#F87474;
+          transform: translateY(-3px);
+        }
+      }
+    }
   }
 }

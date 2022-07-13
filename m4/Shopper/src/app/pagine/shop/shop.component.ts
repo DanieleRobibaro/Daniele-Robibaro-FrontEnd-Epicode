@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+// import { Router } from '@angular/router';
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Product } from 'src/app/interface-class/product';
 import { ProductsClass } from 'src/app/interface-class/products-class';
 import { AuthService } from 'src/app/service/auth.service';
 import { ProductsService } from 'src/app/service/products.service';
+import { ModalCartComponent } from '../../component/modal-cart/modal-cart.component';
 
 @Component({
   selector: 'app-shop',
@@ -11,10 +13,18 @@ import { ProductsService } from 'src/app/service/products.service';
   styleUrls: ['./shop.component.scss'],
 })
 export class ShopComponent implements OnInit {
+  modalRef:NgbActiveModal | null = null;
+
   constructor(
     private productService: ProductsService,
-    private authService: AuthService
-  ) {}
+    private authService: AuthService,
+    private modalService: NgbModal,
+    // private router: Router
+  ) {
+    // this.router.routeReuseStrategy.shouldReuseRoute = () => {
+    //   return false;
+    // };
+  }
 
   products!: Product[];
   loading: boolean = true;
@@ -72,5 +82,9 @@ export class ShopComponent implements OnInit {
   }
   addToCart(product: Product) {
     this.productService.saveProduct(product);
+    // this.router.navigateByUrl('pages/shop/all');
+  }
+  open(){
+    this.modalRef = this.modalService.open(ModalCartComponent);
   }
 }

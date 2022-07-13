@@ -55,11 +55,10 @@
           <div class="col-9" *ngIf="empty">
             <h4>Your cart is empty, give it some love!</h4>
           </div>
-          <div class="col-9">
-            <div class="card" style="width: 14rem" *ngFor="let grup of products | keyvalue">
+          <div class="col-9 not-empty">
+            <div class="card" *ngFor="let grup of products | keyvalue">
               <div *ngFor="let prod of grup.value; let i = index">
                 <ng-container *ngIf="i == 0">
-                  {{grup.value.length}}
                   <img
                     class="card-img-top"
                     src="https://i.picsum.photos/id/1060/5598/3732.jpg?hmac=31kU0jp5ejnPTdEt-8tAXU5sE-buU-y1W1qk_BsiUC8"
@@ -69,7 +68,11 @@
                     <p class="card-text">
                       {{ prod.price | currency: "EUR":"symbol" }}
                     </p>
-                    <a (click)="deleteProductToCart(products.indexOf(prod))" (click)="activeModal.close()" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                    <p class="card-text">
+                      Np°
+                      {{grup.value.length}}
+                    </p>
+                    <a (click)="deleteProductToCart(grup.value.indexOf(prod))" (click)="activeModal.close()" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
                         <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
                         <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
                       </svg></a>
@@ -91,7 +94,16 @@
           Go to Shop now
         </button>
         <button
-          *ngIf="!empty"
+          *ngIf="!empty && !isUserLogged()"
+          type="button"
+          class="btn btn-info rounded-pill"
+          [routerLink]="['/account/log-in']"
+          (click)="activeModal.dismiss()"
+        >
+          Check Out
+        </button>
+        <button
+          *ngIf="!empty && isUserLogged()"
           type="button"
           class="btn btn-info rounded-pill"
           [routerLink]="['/check-out']"
