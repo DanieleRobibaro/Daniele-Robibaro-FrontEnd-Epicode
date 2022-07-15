@@ -6,14 +6,14 @@ const routes: Routes = [
   {
   path: '', component: CheckOutComponent
   },
-  { 
-    path: 'shipping', 
-    loadChildren: () => import('../shipping/shipping.module').then(m => m.ShippingModule)
-  },
-  { 
-    path: 'payment', 
-    loadChildren: () => import('../payment/payment.module').then(m => m.PaymentModule)
-  }
+  // { 
+  //   path: 'shipping', 
+  //   loadChildren: () => import('../shipping/shipping.module').then(m => m.ShippingModule)
+  // },
+  // { 
+  //   path: 'payment', 
+  //   loadChildren: () => import('../payment/payment.module').then(m => m.PaymentModule)
+  // }
 ];
 
 @NgModule({
