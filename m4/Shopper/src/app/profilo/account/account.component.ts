@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from 'src/app/interface-class/user';
 import { AuthService } from 'src/app/service/auth.service';
+import { ProductsService } from 'src/app/service/products.service';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -10,7 +11,11 @@ import Swal from 'sweetalert2';
   styleUrls: ['./account.component.scss'],
 })
 export class AccountComponent implements OnInit {
-  constructor(private authService: AuthService, private router: Router) {}
+  constructor(
+    private authService: AuthService,
+    private router: Router,
+    private productService: ProductsService
+    ) {}
 
   ngOnInit(): void {}
 
@@ -18,6 +23,8 @@ export class AccountComponent implements OnInit {
 
   logout() {
     this.authService.logout();
+    this.productService.deleteAll()
+
 
     this.router.navigate(['/']);
 

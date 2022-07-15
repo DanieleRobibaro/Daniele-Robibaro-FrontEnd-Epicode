@@ -60,4 +60,8 @@ export class ProductsService {
     this.products.splice(i, 1);
     localStorage.setItem(this.ProductsArreyKey, JSON.stringify(this.products));
   }
+  deleteAll() {
+    localStorage.removeItem(this.ProductItemKey)
+    localStorage.removeItem(this.ProductsArreyKey)
+  }
 }

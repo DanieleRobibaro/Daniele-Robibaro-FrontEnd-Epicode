@@ -195,12 +195,12 @@
                 required
               />
             </div>
-            <span
+            <!-- <span
               class="text-danger"
               *ngIf="(street.touched || addressForm.submitted) && street.errors?.['required']"
             >
               Street is required
-            </span>
+            </span> -->
             <div class="alert alert-danger" *ngIf="(street.touched || addressForm.submitted) && street.errors?.['required']" role="alert">
               Street is required
             </div>
