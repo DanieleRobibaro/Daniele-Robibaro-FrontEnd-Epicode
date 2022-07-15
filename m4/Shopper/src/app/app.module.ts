@@ -11,12 +11,15 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { InterceptorInterceptor } from './auth/interceptor.interceptor';
 import { ModalCartComponent } from './component/modal-cart/modal-cart.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    ModalCartComponent
+    ModalCartComponent,
+    
+
     
   ],
   imports: [

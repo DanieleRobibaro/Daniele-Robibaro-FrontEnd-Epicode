@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { GuardGuard } from './auth/guard.guard';
 
 const routes: Routes = [
   { 
@@ -25,6 +26,7 @@ const routes: Routes = [
   }, 
   {
     path: 'check-out',
+    canActivate: [GuardGuard],
     loadChildren: () => import('./carrello/check-out/check-out.module').then(m => m.CheckOutModule) 
   }
 ];
