@@ -1,27 +1,83 @@
-# Shopper
+<a name="readme-top"></a>
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Built With
 
-## Running unit tests
+* [![HTML][HTML.io]][HTML-url]
+* [![CSS][CSS.io]][CSS-url]
+* [![JavaScript][JavaScript.io]][JavaScript-url]
+* [![Angular][Angular.io]][Angular-url]
+* [![Sass][Sass.io]][Sass-url]
+* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [![JSON-Server-Auth][JSON-Server-Auth.com]][JSON-Server-Auth-url]
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<!-- GETTING STARTED -->
+## Getting Started
 
-## Further help
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/DanieleRobibaro/Daniele-Robibaro-FrontEnd-Epicode/edit/master/m4/Shopper
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. 
+   ```sh
+   
+   ```
+4.
+   ```sh
+   ng s
+   ```
+5. 
+   ```sh
+   npm run backend
+   ```
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- CONTACT -->
+## Contact
+
+Daniele Robibaro - robibarodaniele@gmail.com
+
+Project Link: [https://github.com/DanieleRobibaro/Daniele-Robibaro-FrontEnd-Epicode/edit/master/m4/Shopper](https://github.com/DanieleRobibaro/Daniele-Robibaro-FrontEnd-Epicode/edit/master/m4/Shopper)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[HTML.io]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+[HTML-url]: https://developer.mozilla.org/en-US/docs/Learn/HTML
+[CSS.io]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
+[CSS-url]: https://developer.mozilla.org/en-US/docs/Learn/CSS
+[JavaScript.io]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
+[JavaScript-url]: https://developer.mozilla.org/en-US/docs/Learn/JavaScript
+[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[Angular-url]: https://angular.io/
+[Sass.io]: https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white
+[Sass-url]: https://sass-lang.com/
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
+[JSON-Server-Auth.com]: https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white
+[JSON-Server-Auth-url]: https://www.npmjs.com/package/json-server-auth
