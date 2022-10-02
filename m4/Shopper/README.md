@@ -1,16 +1,16 @@
 <a name="readme-top"></a>
 # IN THE WORKS
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Info sul progetto
 
 
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Torna su</a>)</p>
 
 
 
-### Built With
+### Tecnologie utilizzate
 
 * [![HTML][HTML.io]][HTML-url]
 * [![CSS][CSS.io]][CSS-url]
@@ -20,16 +20,16 @@
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JSON-Server-Auth][JSON-Server-Auth.com]][JSON-Server-Auth-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Torna su</a>)</p>
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Come eseguire l'installazione
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Installation
+### Installazione
 
 1. Clone the repo
    ```sh
@@ -43,27 +43,27 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    
    ```
-4.
+4. Lanciare i seguenti comandi nel terminale
    ```sh
-   ng s
+   ng serve (aggiungere --open per farlo aprire automaticamente nel proprio browser)
    ```
-5. 
+5. Infine lanciare quest'ultimo comando per avviare il finto backend
    ```sh
    npm run backend
    ```
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Torna su</a>)</p>
 
 
 <!-- CONTACT -->
-## Contact
+## Contatti
 
 Daniele Robibaro - robibarodaniele@gmail.com
 
 Project Link: [https://github.com/DanieleRobibaro/Daniele-Robibaro-FrontEnd-Epicode/edit/master/m4/Shopper](https://github.com/DanieleRobibaro/Daniele-Robibaro-FrontEnd-Epicode/edit/master/m4/Shopper)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Torna su</a>)</p>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
