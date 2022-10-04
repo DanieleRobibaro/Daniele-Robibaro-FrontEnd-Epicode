@@ -2,7 +2,13 @@
 # IN THE WORKS
 <!-- ABOUT THE PROJECT -->
 ## Info sul progetto
+Questo progetto è stato sviluppato durante il percorso d'istruzione di EPICODE.
 
+Il Progetto per la parte frontend è stato costruito con Angular con annessi HTML, CSS & JS, implementando le librerie di Bootstrap e SASS, essendo un progetto sviluppato prima della mia formazione sull'backend per questa parte mi sono servito dell'aiuto di JSON Server Auth che consente di simulare un semplice backend.
+
+Sono presenti tutte le funzionalità base che troviamo in un e-commerce come la possibilità di registrarsi come nuovo utente e inserire i propri dati di fatturazione modificabili anche in seguito, le gestione del proprio carrello e il check-out finale.
+
+È un progetto che mi ha permesso di aumentare le mie capacità con il framework di Angular, è sicuramente ancora in fase di lavorazione dato che ci sono moltissime migliorie che non ho potuto inserire a causa del tempo avuto a disposizione e vorrei anche implementare un vero backend scritto da me.
 
 
 
@@ -46,10 +52,11 @@ Per ottenere una copia locale attiva e funzionante, segui questi semplici passag
    ```sh
    ng serve (aggiungere --open per farlo aprire automaticamente nel proprio browser)
    ```
-5. Infine lanciare quest'ultimo comando per avviare il finto backend
+5. A seguire lanciare quest'ultimo comando per avviare il finto backend
    ```sh
    npm run backend
    ```
+   (Sconsiglio di modificare i file JSON contenenti prodotti e utenti, se si vuole provare l'esperienza nell app come admin è già tutto preimpostato da me nel codice basta andare nel form dell accesso e fare il login con i dati che sono presenti altrimenti se si vuole procedere come un cliente ci si può semplicemente registrare come nuovo utente e fare l'accesso)
 
 
 <p align="right">(<a href="#readme-top">Torna su</a>)</p>
